@@ -80,7 +80,7 @@ class Per extends React.Component {
                 </div>
                 <div className="year">
                     <p>Yearly Billing</p>
-                    <span>{this.state.per}</span>
+                    <p className="year_discount">{this.state.per}</p>
                 </div>
             </div>
         )

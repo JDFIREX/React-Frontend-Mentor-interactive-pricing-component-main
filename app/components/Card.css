@@ -1,1 +1,153 @@
-/* No CSS *//*# sourceMappingURL=Card.css.map */
+.Main {
+  position: relative;
+  top: 12.2rem;
+  left: 0;
+  border: 1px solid red;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Card {
+  border: 1px solid red;
+  width: 34rem;
+  border-radius: 5px;
+  padding: 0 2.85rem;
+}
+
+.Billing {
+  padding-top: 2.5rem;
+}
+
+.Billing .views {
+  border: 1px solid red;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Billing .views p {
+  font-weight: 800;
+  font-size: .95rem;
+  letter-spacing: 1px;
+}
+
+.Billing .views .prize {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Billing .views .prize h1 {
+  font-size: 2.4rem;
+  margin-right: .4rem;
+}
+
+.Billing .views .prize p {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.range {
+  position: relative;
+  margin-top: 2.1rem;
+  width: 100%;
+}
+
+.range input {
+  width: 100%;
+}
+
+.per {
+  margin-top: 3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 24%;
+}
+
+.per p {
+  font-size: .73rem;
+  font-weight: 800;
+}
+
+.per .switch {
+  width: 2.7rem;
+  background-color: gray;
+  height: 1.35rem;
+  border-radius: 9in;
+  margin: 0rem .95rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 .23rem;
+}
+
+.per .switch .switch_dot {
+  width: .9rem;
+  height: .9rem;
+  border-radius: 9in;
+  background-color: white;
+}
+
+.per .year {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.per .year .year_discount {
+  font-size: .65rem;
+  margin-left: .65rem;
+  background-color: orange;
+  padding: .15rem .32rem;
+  border-radius: 9in;
+}
+/*# sourceMappingURL=Card.css.map */
