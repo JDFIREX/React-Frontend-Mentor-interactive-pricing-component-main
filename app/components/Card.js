@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useLayoutEffect, useState } from "react"
 import "./Card.css"
 
 import checkIcon from "./../../images/icon-check.svg"
@@ -58,6 +58,21 @@ class Views extends React.Component {
         )
     }
 }
+
+// function useWindowSize() {
+//     const [size, setSize] = useState(0);
+//     useLayoutEffect(() => {
+//       function updateSize() {
+//         setSize(window.innerWidth);
+//       }
+//       window.addEventListener('resize', updateSize);
+//       updateSize();
+//       return () => window.removeEventListener('resize', updateSize);
+//     }, []);
+//     return size;
+//   }
+
+
 class Per extends React.Component {
     constructor(props){
         super(props)
@@ -81,8 +96,9 @@ class Per extends React.Component {
         }
     }
 
-
     render(){
+        // const width = useWindowSize();
+        // console.log(width)
         return(
             <div class="per">
                 <p>Monthly Billing</p>

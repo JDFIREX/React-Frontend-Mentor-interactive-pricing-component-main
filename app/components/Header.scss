@@ -14,10 +14,14 @@
     h1{
         font-size: 1.75rem;
         font-weight: 800;
+        color: hsl(227, 35%, 25%);
+        z-index: 2;
     }
     p{
         font-weight: 800;
         font-size: .87rem;
         margin-top: .8rem;
+        color: hsl(225, 20%, 60%);
+        z-index: 2;
     }
 }
