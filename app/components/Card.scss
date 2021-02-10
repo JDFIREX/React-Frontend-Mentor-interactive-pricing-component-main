@@ -22,6 +22,29 @@ p{
     padding: 2.5rem 2.85rem;
     border-bottom: 1px solid hsl(224, 65%, 95%);
 }
+
+@media only screen and (max-width: 800px){
+    .Main{
+        top: 19rem;
+        width: 100%;
+    }
+    p{
+        color: hsl(225, 20%, 60%);
+        font-weight: 600;
+        font-size: .75rem;
+    }
+    
+    .Card{
+        width: 88vw;
+        border-radius: 20px;
+        border: 1px solid red;
+    }
+    .Billing {
+        padding: 4.5rem 3rem;
+        border-bottom: 2px solid hsl(224, 65%, 95%);
+    }
+}
+
 .views{
     width: 100%;
     display: flex;
@@ -46,11 +69,32 @@ p{
     }
 }
 
+@media only screen and (max-width: 800px){
+    .views{
+        height: 18.4rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+        }
+        .prize{
+            h1{
+                font-size: 3.6rem;
+                margin-right: 0rem;
+            }
+        }
+    }
+}
+
+
+
 
 @function makelongshadow($color, $size) {
     $val: 1rem 0 0 $size $color;
     
-    @for $i from 6 through 500 {
+    @for $i from 6 through 550 {
       $val: #{$val}, #{$i}px 0 0 $size #{$color};
     }
     
@@ -58,6 +102,9 @@ p{
   }
 
 
+
+
+  
 .range{
     position: relative;
     margin-top: .35rem;
@@ -98,6 +145,34 @@ p{
     }
     
 }
+
+@media only screen and (max-width: 800px){
+    .range{
+        position: relative;
+        top: -15rem;
+        margin-top: 0rem;
+    
+        input{
+            height: 8rem;
+    
+            &::-webkit-slider-runnable-track {
+                background: hsl(174, 77%, 80%);
+                height: 1rem;
+                border-radius: 9in;
+              }
+            &::-webkit-slider-thumb{
+                top: -2rem;
+                width: 5rem;
+                height: 5rem;
+                background-size: 60% 40%;
+                box-shadow: makelongshadow(#eaeefb, -2rem), 0 5px 15px -3px hsl(174, 86%, 45%);
+            }
+        }
+        
+    }
+}
+
+
 .per{
     margin-top: 1.15rem;
     width: 100%;
@@ -144,6 +219,61 @@ p{
         }
     }
 }
+
+@media only screen and (max-width: 800px){
+    .per{
+        margin-top: 0rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 24%;
+    
+        .switch{
+            width: 2.7rem;
+            background-color: hsl(223, 50%, 87%);
+            height: 1.35rem;
+            border-radius: 9in;
+            margin: 0rem .95rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0 .23rem;
+    
+            .switch_dot{
+                width:.9rem;
+                height:.9rem;
+                border-radius: 9in;
+                background-color: white;
+            }
+    
+            &:hover{
+                background-color: hsl(174, 86%, 45%);
+            }
+        }
+    
+        .year{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+    
+            .year_discount{
+                font-size: .65rem;
+                margin-left: .65rem;
+                background-color: hsl(14, 92%, 95%);
+                color : hsl(15, 100%, 70%);
+                padding: .15rem .32rem;
+                border-radius: 9in;
+            }
+        }
+    }
+}
+
+
+
+
+
+
 
 .Start{
     width: 100%;

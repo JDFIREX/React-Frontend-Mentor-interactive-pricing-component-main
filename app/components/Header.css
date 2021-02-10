@@ -37,4 +37,22 @@
   color: #858fad;
   z-index: 2;
 }
+
+@media only screen and (max-width: 800px) {
+  .Header {
+    top: 11.2rem;
+  }
+  .Header img {
+    width: 18.5rem;
+  }
+  .Header h1 {
+    font-size: 5.5vw;
+  }
+  .Header p {
+    font-size: 3.5vw;
+    line-height: 6vw;
+    width: 50vw;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=Header.css.map */

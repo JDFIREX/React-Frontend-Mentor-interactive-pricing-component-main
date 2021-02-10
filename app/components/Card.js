@@ -40,6 +40,8 @@ class Start extends React.Component{
 }
 
 // Billing
+
+
 class Views extends React.Component {
     constructor(props){
         super(props)
@@ -52,35 +54,46 @@ class Views extends React.Component {
                 <p>{this.props.views} PAGEVIEWS</p>
                 <div className="prize">
                     <h1>${this.props.prize.toFixed(2)}</h1>
-                    <p>/{this.props.time}</p>
+                    <p> /{this.props.time}</p>
                 </div>
             </div>
         )
     }
 }
 
-// function useWindowSize() {
-//     const [size, setSize] = useState(0);
-//     useLayoutEffect(() => {
-//       function updateSize() {
-//         setSize(window.innerWidth);
-//       }
-//       window.addEventListener('resize', updateSize);
-//       updateSize();
-//       return () => window.removeEventListener('resize', updateSize);
-//     }, []);
-//     return size;
-//   }
-
 
 class Per extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            justify : "flex-start"
+            justify : "flex-start",
+            desktop : true
         }
         this.SwitchChange = this.SwitchChange.bind(this)
     }
+
+    componentDidMount(){
+        if(window.innerWidth <= 800){
+            this.setState({
+                desktop : false
+            })
+            this.props.onYearChange()
+        }
+        window.addEventListener("resize", () => {
+            if(window.innerWidth <= 800 && this.state.desktop){
+                this.setState({
+                    desktop : false
+                })
+                this.props.onYearChange()
+            }else if(window.innerWidth > 800 && !this.state.desktop){
+                this.setState({
+                    desktop : true
+                })
+                this.props.onYearChange()
+            }
+        })
+    }
+
 
     SwitchChange(event){
         this.props.onMonthlyChange(!this.props.monthly)
@@ -97,8 +110,6 @@ class Per extends React.Component {
     }
 
     render(){
-        // const width = useWindowSize();
-        // console.log(width)
         return(
             <div class="per">
                 <p>Monthly Billing</p>
@@ -113,6 +124,8 @@ class Per extends React.Component {
         )
     }
 }
+
+
 class Range extends React.Component{
     constructor(props) {
         super(props)
@@ -149,6 +162,8 @@ class Range extends React.Component{
         )
     }
 }
+
+
 function ChangePrize(value,time,discount){
     switch(value){
         case 1 : 
@@ -169,6 +184,8 @@ function ChangePrize(value,time,discount){
     }
 }
 
+
+
 class Billing extends React.Component{
     constructor(props){
         super(props)
@@ -184,6 +201,7 @@ class Billing extends React.Component{
 
         this.ValueChange = this.ValueChange.bind(this)
         this.MonthlyChange = this.MonthlyChange.bind(this)
+        this.onYearChange = this.onYearChange.bind(this)
     }
 
     ValueChange(value) {
@@ -204,7 +222,17 @@ class Billing extends React.Component{
                 ((state.prize / state.discount) / 12)
         }))
     }
-
+    onYearChange(){
+        if(this.state.year == "25% discount"){
+            this.setState({
+                year : "-25%"
+            })
+        }else {
+            this.setState({
+                year : "25% discount"
+            })
+        }
+    }
 
     render(){
         return(
@@ -224,6 +252,7 @@ class Billing extends React.Component{
                     year={this.state.year}
                     monthly={this.state.monthly}
                     onMonthlyChange={this.MonthlyChange}
+                    onYearChange={this.onYearChange}
                 />
             </div>
         )
@@ -232,6 +261,8 @@ class Billing extends React.Component{
 
 
 //  Main
+
+
 export default class Main extends React.Component {
     constructor(props){
         super(props)
