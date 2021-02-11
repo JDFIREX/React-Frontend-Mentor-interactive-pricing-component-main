@@ -1,3 +1,14 @@
+@function makelongshadow($color, $size) {
+    $val: 1rem 0 0 $size $color;
+    
+    @for $i from 6 through 550 {
+      $val: #{$val}, #{$i}px 0 0 $size #{$color};
+    }
+    
+    @return $val;
+}
+
+
 .Main{
     position: relative;
     top: 12.2rem;left: 0;
@@ -23,27 +34,22 @@ p{
     border-bottom: 1px solid hsl(224, 65%, 95%);
 }
 
+
 @media only screen and (max-width: 800px){
     .Main{
-        top: 19rem;
-        width: 100%;
+        top: 40vw;
     }
-    p{
-        color: hsl(225, 20%, 60%);
-        font-weight: 600;
-        font-size: .75rem;
-    }
-    
     .Card{
-        width: 88vw;
+        width: 86vw;
         border-radius: 20px;
         border: 1px solid red;
     }
     .Billing {
-        padding: 4.5rem 3rem;
-        border-bottom: 2px solid hsl(224, 65%, 95%);
+        padding: 8.438vw 5.625vw 1vw 5.625vw;
+        border-bottom: 3px solid hsl(224, 65%, 95%);
     }
 }
+
 
 .views{
     width: 100%;
@@ -71,17 +77,15 @@ p{
 
 @media only screen and (max-width: 800px){
     .views{
-        height: 18.4rem;
+        height: 39vw;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
         p{
-            font-size: 1.5rem;
+            font-size: 3vw;
             letter-spacing: 3px;
         }
         .prize{
             h1{
-                font-size: 3.6rem;
+                font-size: 9vw;
                 margin-right: 0rem;
             }
         }
@@ -91,20 +95,8 @@ p{
 
 
 
-@function makelongshadow($color, $size) {
-    $val: 1rem 0 0 $size $color;
-    
-    @for $i from 6 through 550 {
-      $val: #{$val}, #{$i}px 0 0 $size #{$color};
-    }
-    
-    @return $val;
-  }
 
-
-
-
-  
+ 
 .range{
     position: relative;
     margin-top: .35rem;
@@ -117,6 +109,8 @@ p{
         overflow: hidden;
         width: 100%;
         border-radius: 9in;
+        outline: none;
+        border: none;
 
         &::-webkit-slider-runnable-track {
             background: hsl(174, 77%, 80%);
@@ -148,24 +142,21 @@ p{
 
 @media only screen and (max-width: 800px){
     .range{
-        position: relative;
-        top: -15rem;
+        top: -32vw;
         margin-top: 0rem;
     
         input{
-            height: 8rem;
+            height: 15vw;
     
             &::-webkit-slider-runnable-track {
-                background: hsl(174, 77%, 80%);
-                height: 1rem;
-                border-radius: 9in;
+                height: 1.875vw;
               }
             &::-webkit-slider-thumb{
-                top: -2rem;
-                width: 5rem;
-                height: 5rem;
+                top: -3.750vw;
+                width: 9.375vw;
+                height: 9.375vw;
                 background-size: 60% 40%;
-                box-shadow: makelongshadow(#eaeefb, -2rem), 0 5px 15px -3px hsl(174, 86%, 45%);
+                box-shadow: makelongshadow(#eaeefb, -3.750vw), 0 5px 15px -3px hsl(174, 86%, 45%);
             }
         }
         
@@ -222,57 +213,34 @@ p{
 
 @media only screen and (max-width: 800px){
     .per{
+        position: relative;top: -4rem;
         margin-top: 0rem;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-left: 24%;
-    
+        padding-left: 9%;
+        p{
+            font-size: 3vw;
+        }
         .switch{
-            width: 2.7rem;
-            background-color: hsl(223, 50%, 87%);
-            height: 1.35rem;
-            border-radius: 9in;
-            margin: 0rem .95rem;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 0 .23rem;
+            width: 11.2vw;
+            height: 5.2vw;
+            margin: 0rem 3.6vw;
+            padding: 0 1.2vw;
     
             .switch_dot{
-                width:.9rem;
-                height:.9rem;
-                border-radius: 9in;
-                background-color: white;
-            }
-    
-            &:hover{
-                background-color: hsl(174, 86%, 45%);
+                width:4vw;
+                height:4vw;
             }
         }
     
         .year{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-    
             .year_discount{
-                font-size: .65rem;
-                margin-left: .65rem;
-                background-color: hsl(14, 92%, 95%);
-                color : hsl(15, 100%, 70%);
-                padding: .15rem .32rem;
-                border-radius: 9in;
+                position: absolute; right: -2vw;
+                font-size: 2.5vw;
+                margin-left: 0rem;
+                padding: .4vw 2vw;
             }
         }
     }
 }
-
-
-
-
-
 
 
 .Start{
@@ -315,6 +283,37 @@ p{
 
         &:hover{
             color: white;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+    .Start{
+        padding: 6.2vw 5.438vw 8.5vw 5.438vw;
+        flex-direction: column;
+        height: 53vw;
+    
+        .check_list{
+            align-items: center;
+    
+            .check_item{
+                margin-bottom: 3vw;
+                p{
+                    font-size: 3vw;
+                }
+                img{
+                    width: 2.5vw;
+                    height: 2vw;
+                    margin-right: 5vw;
+                }
+            }
+        }
+    
+        button{
+            height: 11vw;
+            width: 44vw;
+            font-size: 3.2vw;
         }
     }
 }
