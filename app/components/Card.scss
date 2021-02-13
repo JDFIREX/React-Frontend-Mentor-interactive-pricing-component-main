@@ -27,7 +27,7 @@ p{
     border-radius: 5px;
     z-index: 2;
     background-color: hsl(0, 0%, 100%);
-    box-shadow: 0px 0px 15px -1px #eaeefb;
+    box-shadow: 0px 0px 15px -1px #d3d7e2;
 }
 .Billing {
     padding: 2.5rem 2.85rem;
@@ -37,18 +37,24 @@ p{
 
 @media only screen and (max-width: 800px){
     .Main{
-        top: 40vw;
+        top: 41vw;
     }
     .Card{
-        width: 86vw;
-        border-radius: 20px;
-        border: 1px solid red;
+        width: 87vw;
+        border-radius: 3vw;
     }
     .Billing {
-        padding: 8.438vw 5.625vw 1vw 5.625vw;
+        padding: 8.438vw 5.625vw 4vw 5.625vw;
         border-bottom: 3px solid hsl(224, 65%, 95%);
     }
 }
+@media only screen and (max-width: 450px){
+    .Billing {
+        padding: 8.438vw 5.625vw;
+        border-bottom: .5vw solid hsl(224, 65%, 95%);
+    }
+}
+
 
 
 .views{
@@ -77,7 +83,7 @@ p{
 
 @media only screen and (max-width: 800px){
     .views{
-        height: 39vw;
+        height: 40vw;
         flex-direction: column;
         p{
             font-size: 3vw;
@@ -86,29 +92,36 @@ p{
         .prize{
             h1{
                 font-size: 9vw;
-                margin-right: 0rem;
+                margin-right: 2vw;
             }
         }
     }
 }
 
-
-
-
-
+@media only screen and (max-width: 350px){
+    .views{
+        p{
+            font-size: 4vw;
+        }
+        .prize{
+            h1{
+                font-size: 10vw;
+            }
+        }
+    }
+}
  
 .range{
     position: relative;
     margin-top: .35rem;
     width: 100%;
+    overflow-x: hidden;
 
     input{
         appearance: none;
         cursor: pointer;
         height: 5rem;
-        overflow: hidden;
         width: 100%;
-        border-radius: 9in;
         outline: none;
         border: none;
 
@@ -142,7 +155,7 @@ p{
 
 @media only screen and (max-width: 800px){
     .range{
-        top: -32vw;
+        top: -30vw;
         margin-top: 0rem;
     
         input{
@@ -157,6 +170,19 @@ p{
                 height: 9.375vw;
                 background-size: 60% 40%;
                 box-shadow: makelongshadow(#eaeefb, -3.750vw), 0 5px 15px -3px hsl(174, 86%, 45%);
+            }
+        }
+        
+    }
+}
+@media only screen and (max-width: 450px){
+    .range{
+        top: -33vw;
+        input{
+            height: 20vw;
+            &::-webkit-slider-thumb{
+                top: -3.8vw;
+                box-shadow: makelongshadow(#eaeefb, -3.75vw), 0 1vw 15px -3px hsl(174, 86%, 45%);
             }
         }
         
@@ -213,7 +239,7 @@ p{
 
 @media only screen and (max-width: 800px){
     .per{
-        position: relative;top: -4rem;
+        position: relative;top: -5.5vw;
         margin-top: 0rem;
         padding-left: 9%;
         p{
@@ -226,8 +252,8 @@ p{
             padding: 0 1.2vw;
     
             .switch_dot{
-                width:4vw;
-                height:4vw;
+                width:3.8vw;
+                height:3.8vw;
             }
         }
     
@@ -237,6 +263,23 @@ p{
                 font-size: 2.5vw;
                 margin-left: 0rem;
                 padding: .4vw 2vw;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 450px){
+    .per{
+        top: 0;margin-top: -11vw;
+        p{
+            font-size: 3.2vw;
+        }
+        .switch{
+            margin: 0rem 3vw;
+        }
+    
+        .year{
+            .year_discount{
+                font-size: 2.8vw;
             }
         }
     }
@@ -290,7 +333,7 @@ p{
 
 @media only screen and (max-width: 800px){
     .Start{
-        padding: 6.2vw 5.438vw 8.5vw 5.438vw;
+        padding: 7vw 5.438vw 8.5vw 5.438vw;
         flex-direction: column;
         height: 53vw;
     
@@ -301,10 +344,11 @@ p{
                 margin-bottom: 3vw;
                 p{
                     font-size: 3vw;
+                    font-weight: 600;
                 }
                 img{
                     width: 2.5vw;
-                    height: 2vw;
+                    height: 2.5vw;
                     margin-right: 5vw;
                 }
             }
@@ -314,6 +358,28 @@ p{
             height: 11vw;
             width: 44vw;
             font-size: 3.2vw;
+        }
+    }
+}
+@media only screen and (max-width: 400px){
+    .Start{
+        .check_list{
+            .check_item{
+                margin-bottom: 3.5vw;
+                p{
+                    font-size: 3.3vw;
+                }
+                img{
+                    width: 2.5vw;
+                    height: 2.5vw;
+                    margin-right: 5vw;
+                }
+            }
+        }
+        button{
+            height: 11vw;
+            width: 44vw;
+            font-size: 3.3vw;
         }
     }
 }

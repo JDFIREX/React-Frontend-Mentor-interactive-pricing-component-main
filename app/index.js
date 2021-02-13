@@ -24,13 +24,13 @@ function useWindowSize() {
 
 function Bgpattern() {
     let width = useWindowSize()
-    let pattern = width <= 800 ? <div className="bg-pattern"></div> : <img src={bgpattern} className="bg-pattern" />;
+    let pattern = width <= 800 ? <div className="bg-pattern"></div> : <img src={bgpattern} className="bg-pattern" alt="bg-pattern"/>;
 
     window.addEventListener("resize", (e) => {
         if(width <= 800){
             pattern = <div className="bg-pattern"></div>
         }else{
-            pattern = <img src={bgpattern} className="bg-pattern" />
+            pattern = <img src={bgpattern} className="bg-pattern" alt="bg-pattern" />
         }
     })
 
@@ -45,7 +45,6 @@ class Index extends React.Component {
     render(){
         return (
             <>
-                <img src={design} className="design"/>
                 <Bgpattern />
                 <Header />
                 <Main />

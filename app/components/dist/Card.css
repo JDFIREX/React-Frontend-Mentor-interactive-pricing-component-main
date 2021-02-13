@@ -1,0 +1,333 @@
+.Main {
+  position: relative;
+  top: 12.2rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  color: #858fad;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.Card {
+  width: 34rem;
+  border-radius: 5px;
+  z-index: 2;
+  background-color: white;
+  box-shadow: 0px 0px 15px -1px #d3d7e2;
+}
+
+.Billing {
+  padding: 2.5rem 2.85rem;
+  border-bottom: 1px solid #eaeefb;
+}
+
+@media only screen and (max-width: 800px) {
+  .Main {
+    top: 41vw;
+  }
+
+  .Card {
+    width: 87vw;
+    border-radius: 3vw;
+  }
+
+  .Billing {
+    padding: 8.438vw 5.625vw 4vw 5.625vw;
+    border-bottom: 3px solid #eaeefb;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .Billing {
+    padding: 8.438vw 5.625vw;
+    border-bottom: 0.5vw solid #eaeefb;
+  }
+}
+.views {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.views p {
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+.views .prize {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.views .prize h1 {
+  font-size: 2.4rem;
+  margin-right: 0.4rem;
+  color: #293356;
+}
+
+@media only screen and (max-width: 800px) {
+  .views {
+    height: 40vw;
+    flex-direction: column;
+  }
+  .views p {
+    font-size: 3vw;
+    letter-spacing: 3px;
+  }
+  .views .prize h1 {
+    font-size: 9vw;
+    margin-right: 2vw;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .views p {
+    font-size: 4vw;
+  }
+  .views .prize h1 {
+    font-size: 10vw;
+  }
+}
+.range {
+  position: relative;
+  margin-top: 0.35rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+.range input {
+  appearance: none;
+  cursor: pointer;
+  height: 5rem;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.range input::-webkit-slider-runnable-track {
+  background: #a5f3eb;
+  height: 0.5rem;
+  border-radius: 9in;
+}
+.range input::-webkit-slider-thumb {
+  position: relative;
+  top: -1rem;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9in;
+  background-color: #10d5c2;
+  background-image: url("./../../images/icon-slider.svg");
+  background-position: center;
+  background-size: 50% 40%;
+  background-repeat: no-repeat;
+  box-shadow: 1rem 0 0 -1rem #eaeefb, 6px 0 0 -1rem #eaeefb, 7px 0 0 -1rem #eaeefb, 8px 0 0 -1rem #eaeefb, 9px 0 0 -1rem #eaeefb, 10px 0 0 -1rem #eaeefb, 11px 0 0 -1rem #eaeefb, 12px 0 0 -1rem #eaeefb, 13px 0 0 -1rem #eaeefb, 14px 0 0 -1rem #eaeefb, 15px 0 0 -1rem #eaeefb, 16px 0 0 -1rem #eaeefb, 17px 0 0 -1rem #eaeefb, 18px 0 0 -1rem #eaeefb, 19px 0 0 -1rem #eaeefb, 20px 0 0 -1rem #eaeefb, 21px 0 0 -1rem #eaeefb, 22px 0 0 -1rem #eaeefb, 23px 0 0 -1rem #eaeefb, 24px 0 0 -1rem #eaeefb, 25px 0 0 -1rem #eaeefb, 26px 0 0 -1rem #eaeefb, 27px 0 0 -1rem #eaeefb, 28px 0 0 -1rem #eaeefb, 29px 0 0 -1rem #eaeefb, 30px 0 0 -1rem #eaeefb, 31px 0 0 -1rem #eaeefb, 32px 0 0 -1rem #eaeefb, 33px 0 0 -1rem #eaeefb, 34px 0 0 -1rem #eaeefb, 35px 0 0 -1rem #eaeefb, 36px 0 0 -1rem #eaeefb, 37px 0 0 -1rem #eaeefb, 38px 0 0 -1rem #eaeefb, 39px 0 0 -1rem #eaeefb, 40px 0 0 -1rem #eaeefb, 41px 0 0 -1rem #eaeefb, 42px 0 0 -1rem #eaeefb, 43px 0 0 -1rem #eaeefb, 44px 0 0 -1rem #eaeefb, 45px 0 0 -1rem #eaeefb, 46px 0 0 -1rem #eaeefb, 47px 0 0 -1rem #eaeefb, 48px 0 0 -1rem #eaeefb, 49px 0 0 -1rem #eaeefb, 50px 0 0 -1rem #eaeefb, 51px 0 0 -1rem #eaeefb, 52px 0 0 -1rem #eaeefb, 53px 0 0 -1rem #eaeefb, 54px 0 0 -1rem #eaeefb, 55px 0 0 -1rem #eaeefb, 56px 0 0 -1rem #eaeefb, 57px 0 0 -1rem #eaeefb, 58px 0 0 -1rem #eaeefb, 59px 0 0 -1rem #eaeefb, 60px 0 0 -1rem #eaeefb, 61px 0 0 -1rem #eaeefb, 62px 0 0 -1rem #eaeefb, 63px 0 0 -1rem #eaeefb, 64px 0 0 -1rem #eaeefb, 65px 0 0 -1rem #eaeefb, 66px 0 0 -1rem #eaeefb, 67px 0 0 -1rem #eaeefb, 68px 0 0 -1rem #eaeefb, 69px 0 0 -1rem #eaeefb, 70px 0 0 -1rem #eaeefb, 71px 0 0 -1rem #eaeefb, 72px 0 0 -1rem #eaeefb, 73px 0 0 -1rem #eaeefb, 74px 0 0 -1rem #eaeefb, 75px 0 0 -1rem #eaeefb, 76px 0 0 -1rem #eaeefb, 77px 0 0 -1rem #eaeefb, 78px 0 0 -1rem #eaeefb, 79px 0 0 -1rem #eaeefb, 80px 0 0 -1rem #eaeefb, 81px 0 0 -1rem #eaeefb, 82px 0 0 -1rem #eaeefb, 83px 0 0 -1rem #eaeefb, 84px 0 0 -1rem #eaeefb, 85px 0 0 -1rem #eaeefb, 86px 0 0 -1rem #eaeefb, 87px 0 0 -1rem #eaeefb, 88px 0 0 -1rem #eaeefb, 89px 0 0 -1rem #eaeefb, 90px 0 0 -1rem #eaeefb, 91px 0 0 -1rem #eaeefb, 92px 0 0 -1rem #eaeefb, 93px 0 0 -1rem #eaeefb, 94px 0 0 -1rem #eaeefb, 95px 0 0 -1rem #eaeefb, 96px 0 0 -1rem #eaeefb, 97px 0 0 -1rem #eaeefb, 98px 0 0 -1rem #eaeefb, 99px 0 0 -1rem #eaeefb, 100px 0 0 -1rem #eaeefb, 101px 0 0 -1rem #eaeefb, 102px 0 0 -1rem #eaeefb, 103px 0 0 -1rem #eaeefb, 104px 0 0 -1rem #eaeefb, 105px 0 0 -1rem #eaeefb, 106px 0 0 -1rem #eaeefb, 107px 0 0 -1rem #eaeefb, 108px 0 0 -1rem #eaeefb, 109px 0 0 -1rem #eaeefb, 110px 0 0 -1rem #eaeefb, 111px 0 0 -1rem #eaeefb, 112px 0 0 -1rem #eaeefb, 113px 0 0 -1rem #eaeefb, 114px 0 0 -1rem #eaeefb, 115px 0 0 -1rem #eaeefb, 116px 0 0 -1rem #eaeefb, 117px 0 0 -1rem #eaeefb, 118px 0 0 -1rem #eaeefb, 119px 0 0 -1rem #eaeefb, 120px 0 0 -1rem #eaeefb, 121px 0 0 -1rem #eaeefb, 122px 0 0 -1rem #eaeefb, 123px 0 0 -1rem #eaeefb, 124px 0 0 -1rem #eaeefb, 125px 0 0 -1rem #eaeefb, 126px 0 0 -1rem #eaeefb, 127px 0 0 -1rem #eaeefb, 128px 0 0 -1rem #eaeefb, 129px 0 0 -1rem #eaeefb, 130px 0 0 -1rem #eaeefb, 131px 0 0 -1rem #eaeefb, 132px 0 0 -1rem #eaeefb, 133px 0 0 -1rem #eaeefb, 134px 0 0 -1rem #eaeefb, 135px 0 0 -1rem #eaeefb, 136px 0 0 -1rem #eaeefb, 137px 0 0 -1rem #eaeefb, 138px 0 0 -1rem #eaeefb, 139px 0 0 -1rem #eaeefb, 140px 0 0 -1rem #eaeefb, 141px 0 0 -1rem #eaeefb, 142px 0 0 -1rem #eaeefb, 143px 0 0 -1rem #eaeefb, 144px 0 0 -1rem #eaeefb, 145px 0 0 -1rem #eaeefb, 146px 0 0 -1rem #eaeefb, 147px 0 0 -1rem #eaeefb, 148px 0 0 -1rem #eaeefb, 149px 0 0 -1rem #eaeefb, 150px 0 0 -1rem #eaeefb, 151px 0 0 -1rem #eaeefb, 152px 0 0 -1rem #eaeefb, 153px 0 0 -1rem #eaeefb, 154px 0 0 -1rem #eaeefb, 155px 0 0 -1rem #eaeefb, 156px 0 0 -1rem #eaeefb, 157px 0 0 -1rem #eaeefb, 158px 0 0 -1rem #eaeefb, 159px 0 0 -1rem #eaeefb, 160px 0 0 -1rem #eaeefb, 161px 0 0 -1rem #eaeefb, 162px 0 0 -1rem #eaeefb, 163px 0 0 -1rem #eaeefb, 164px 0 0 -1rem #eaeefb, 165px 0 0 -1rem #eaeefb, 166px 0 0 -1rem #eaeefb, 167px 0 0 -1rem #eaeefb, 168px 0 0 -1rem #eaeefb, 169px 0 0 -1rem #eaeefb, 170px 0 0 -1rem #eaeefb, 171px 0 0 -1rem #eaeefb, 172px 0 0 -1rem #eaeefb, 173px 0 0 -1rem #eaeefb, 174px 0 0 -1rem #eaeefb, 175px 0 0 -1rem #eaeefb, 176px 0 0 -1rem #eaeefb, 177px 0 0 -1rem #eaeefb, 178px 0 0 -1rem #eaeefb, 179px 0 0 -1rem #eaeefb, 180px 0 0 -1rem #eaeefb, 181px 0 0 -1rem #eaeefb, 182px 0 0 -1rem #eaeefb, 183px 0 0 -1rem #eaeefb, 184px 0 0 -1rem #eaeefb, 185px 0 0 -1rem #eaeefb, 186px 0 0 -1rem #eaeefb, 187px 0 0 -1rem #eaeefb, 188px 0 0 -1rem #eaeefb, 189px 0 0 -1rem #eaeefb, 190px 0 0 -1rem #eaeefb, 191px 0 0 -1rem #eaeefb, 192px 0 0 -1rem #eaeefb, 193px 0 0 -1rem #eaeefb, 194px 0 0 -1rem #eaeefb, 195px 0 0 -1rem #eaeefb, 196px 0 0 -1rem #eaeefb, 197px 0 0 -1rem #eaeefb, 198px 0 0 -1rem #eaeefb, 199px 0 0 -1rem #eaeefb, 200px 0 0 -1rem #eaeefb, 201px 0 0 -1rem #eaeefb, 202px 0 0 -1rem #eaeefb, 203px 0 0 -1rem #eaeefb, 204px 0 0 -1rem #eaeefb, 205px 0 0 -1rem #eaeefb, 206px 0 0 -1rem #eaeefb, 207px 0 0 -1rem #eaeefb, 208px 0 0 -1rem #eaeefb, 209px 0 0 -1rem #eaeefb, 210px 0 0 -1rem #eaeefb, 211px 0 0 -1rem #eaeefb, 212px 0 0 -1rem #eaeefb, 213px 0 0 -1rem #eaeefb, 214px 0 0 -1rem #eaeefb, 215px 0 0 -1rem #eaeefb, 216px 0 0 -1rem #eaeefb, 217px 0 0 -1rem #eaeefb, 218px 0 0 -1rem #eaeefb, 219px 0 0 -1rem #eaeefb, 220px 0 0 -1rem #eaeefb, 221px 0 0 -1rem #eaeefb, 222px 0 0 -1rem #eaeefb, 223px 0 0 -1rem #eaeefb, 224px 0 0 -1rem #eaeefb, 225px 0 0 -1rem #eaeefb, 226px 0 0 -1rem #eaeefb, 227px 0 0 -1rem #eaeefb, 228px 0 0 -1rem #eaeefb, 229px 0 0 -1rem #eaeefb, 230px 0 0 -1rem #eaeefb, 231px 0 0 -1rem #eaeefb, 232px 0 0 -1rem #eaeefb, 233px 0 0 -1rem #eaeefb, 234px 0 0 -1rem #eaeefb, 235px 0 0 -1rem #eaeefb, 236px 0 0 -1rem #eaeefb, 237px 0 0 -1rem #eaeefb, 238px 0 0 -1rem #eaeefb, 239px 0 0 -1rem #eaeefb, 240px 0 0 -1rem #eaeefb, 241px 0 0 -1rem #eaeefb, 242px 0 0 -1rem #eaeefb, 243px 0 0 -1rem #eaeefb, 244px 0 0 -1rem #eaeefb, 245px 0 0 -1rem #eaeefb, 246px 0 0 -1rem #eaeefb, 247px 0 0 -1rem #eaeefb, 248px 0 0 -1rem #eaeefb, 249px 0 0 -1rem #eaeefb, 250px 0 0 -1rem #eaeefb, 251px 0 0 -1rem #eaeefb, 252px 0 0 -1rem #eaeefb, 253px 0 0 -1rem #eaeefb, 254px 0 0 -1rem #eaeefb, 255px 0 0 -1rem #eaeefb, 256px 0 0 -1rem #eaeefb, 257px 0 0 -1rem #eaeefb, 258px 0 0 -1rem #eaeefb, 259px 0 0 -1rem #eaeefb, 260px 0 0 -1rem #eaeefb, 261px 0 0 -1rem #eaeefb, 262px 0 0 -1rem #eaeefb, 263px 0 0 -1rem #eaeefb, 264px 0 0 -1rem #eaeefb, 265px 0 0 -1rem #eaeefb, 266px 0 0 -1rem #eaeefb, 267px 0 0 -1rem #eaeefb, 268px 0 0 -1rem #eaeefb, 269px 0 0 -1rem #eaeefb, 270px 0 0 -1rem #eaeefb, 271px 0 0 -1rem #eaeefb, 272px 0 0 -1rem #eaeefb, 273px 0 0 -1rem #eaeefb, 274px 0 0 -1rem #eaeefb, 275px 0 0 -1rem #eaeefb, 276px 0 0 -1rem #eaeefb, 277px 0 0 -1rem #eaeefb, 278px 0 0 -1rem #eaeefb, 279px 0 0 -1rem #eaeefb, 280px 0 0 -1rem #eaeefb, 281px 0 0 -1rem #eaeefb, 282px 0 0 -1rem #eaeefb, 283px 0 0 -1rem #eaeefb, 284px 0 0 -1rem #eaeefb, 285px 0 0 -1rem #eaeefb, 286px 0 0 -1rem #eaeefb, 287px 0 0 -1rem #eaeefb, 288px 0 0 -1rem #eaeefb, 289px 0 0 -1rem #eaeefb, 290px 0 0 -1rem #eaeefb, 291px 0 0 -1rem #eaeefb, 292px 0 0 -1rem #eaeefb, 293px 0 0 -1rem #eaeefb, 294px 0 0 -1rem #eaeefb, 295px 0 0 -1rem #eaeefb, 296px 0 0 -1rem #eaeefb, 297px 0 0 -1rem #eaeefb, 298px 0 0 -1rem #eaeefb, 299px 0 0 -1rem #eaeefb, 300px 0 0 -1rem #eaeefb, 301px 0 0 -1rem #eaeefb, 302px 0 0 -1rem #eaeefb, 303px 0 0 -1rem #eaeefb, 304px 0 0 -1rem #eaeefb, 305px 0 0 -1rem #eaeefb, 306px 0 0 -1rem #eaeefb, 307px 0 0 -1rem #eaeefb, 308px 0 0 -1rem #eaeefb, 309px 0 0 -1rem #eaeefb, 310px 0 0 -1rem #eaeefb, 311px 0 0 -1rem #eaeefb, 312px 0 0 -1rem #eaeefb, 313px 0 0 -1rem #eaeefb, 314px 0 0 -1rem #eaeefb, 315px 0 0 -1rem #eaeefb, 316px 0 0 -1rem #eaeefb, 317px 0 0 -1rem #eaeefb, 318px 0 0 -1rem #eaeefb, 319px 0 0 -1rem #eaeefb, 320px 0 0 -1rem #eaeefb, 321px 0 0 -1rem #eaeefb, 322px 0 0 -1rem #eaeefb, 323px 0 0 -1rem #eaeefb, 324px 0 0 -1rem #eaeefb, 325px 0 0 -1rem #eaeefb, 326px 0 0 -1rem #eaeefb, 327px 0 0 -1rem #eaeefb, 328px 0 0 -1rem #eaeefb, 329px 0 0 -1rem #eaeefb, 330px 0 0 -1rem #eaeefb, 331px 0 0 -1rem #eaeefb, 332px 0 0 -1rem #eaeefb, 333px 0 0 -1rem #eaeefb, 334px 0 0 -1rem #eaeefb, 335px 0 0 -1rem #eaeefb, 336px 0 0 -1rem #eaeefb, 337px 0 0 -1rem #eaeefb, 338px 0 0 -1rem #eaeefb, 339px 0 0 -1rem #eaeefb, 340px 0 0 -1rem #eaeefb, 341px 0 0 -1rem #eaeefb, 342px 0 0 -1rem #eaeefb, 343px 0 0 -1rem #eaeefb, 344px 0 0 -1rem #eaeefb, 345px 0 0 -1rem #eaeefb, 346px 0 0 -1rem #eaeefb, 347px 0 0 -1rem #eaeefb, 348px 0 0 -1rem #eaeefb, 349px 0 0 -1rem #eaeefb, 350px 0 0 -1rem #eaeefb, 351px 0 0 -1rem #eaeefb, 352px 0 0 -1rem #eaeefb, 353px 0 0 -1rem #eaeefb, 354px 0 0 -1rem #eaeefb, 355px 0 0 -1rem #eaeefb, 356px 0 0 -1rem #eaeefb, 357px 0 0 -1rem #eaeefb, 358px 0 0 -1rem #eaeefb, 359px 0 0 -1rem #eaeefb, 360px 0 0 -1rem #eaeefb, 361px 0 0 -1rem #eaeefb, 362px 0 0 -1rem #eaeefb, 363px 0 0 -1rem #eaeefb, 364px 0 0 -1rem #eaeefb, 365px 0 0 -1rem #eaeefb, 366px 0 0 -1rem #eaeefb, 367px 0 0 -1rem #eaeefb, 368px 0 0 -1rem #eaeefb, 369px 0 0 -1rem #eaeefb, 370px 0 0 -1rem #eaeefb, 371px 0 0 -1rem #eaeefb, 372px 0 0 -1rem #eaeefb, 373px 0 0 -1rem #eaeefb, 374px 0 0 -1rem #eaeefb, 375px 0 0 -1rem #eaeefb, 376px 0 0 -1rem #eaeefb, 377px 0 0 -1rem #eaeefb, 378px 0 0 -1rem #eaeefb, 379px 0 0 -1rem #eaeefb, 380px 0 0 -1rem #eaeefb, 381px 0 0 -1rem #eaeefb, 382px 0 0 -1rem #eaeefb, 383px 0 0 -1rem #eaeefb, 384px 0 0 -1rem #eaeefb, 385px 0 0 -1rem #eaeefb, 386px 0 0 -1rem #eaeefb, 387px 0 0 -1rem #eaeefb, 388px 0 0 -1rem #eaeefb, 389px 0 0 -1rem #eaeefb, 390px 0 0 -1rem #eaeefb, 391px 0 0 -1rem #eaeefb, 392px 0 0 -1rem #eaeefb, 393px 0 0 -1rem #eaeefb, 394px 0 0 -1rem #eaeefb, 395px 0 0 -1rem #eaeefb, 396px 0 0 -1rem #eaeefb, 397px 0 0 -1rem #eaeefb, 398px 0 0 -1rem #eaeefb, 399px 0 0 -1rem #eaeefb, 400px 0 0 -1rem #eaeefb, 401px 0 0 -1rem #eaeefb, 402px 0 0 -1rem #eaeefb, 403px 0 0 -1rem #eaeefb, 404px 0 0 -1rem #eaeefb, 405px 0 0 -1rem #eaeefb, 406px 0 0 -1rem #eaeefb, 407px 0 0 -1rem #eaeefb, 408px 0 0 -1rem #eaeefb, 409px 0 0 -1rem #eaeefb, 410px 0 0 -1rem #eaeefb, 411px 0 0 -1rem #eaeefb, 412px 0 0 -1rem #eaeefb, 413px 0 0 -1rem #eaeefb, 414px 0 0 -1rem #eaeefb, 415px 0 0 -1rem #eaeefb, 416px 0 0 -1rem #eaeefb, 417px 0 0 -1rem #eaeefb, 418px 0 0 -1rem #eaeefb, 419px 0 0 -1rem #eaeefb, 420px 0 0 -1rem #eaeefb, 421px 0 0 -1rem #eaeefb, 422px 0 0 -1rem #eaeefb, 423px 0 0 -1rem #eaeefb, 424px 0 0 -1rem #eaeefb, 425px 0 0 -1rem #eaeefb, 426px 0 0 -1rem #eaeefb, 427px 0 0 -1rem #eaeefb, 428px 0 0 -1rem #eaeefb, 429px 0 0 -1rem #eaeefb, 430px 0 0 -1rem #eaeefb, 431px 0 0 -1rem #eaeefb, 432px 0 0 -1rem #eaeefb, 433px 0 0 -1rem #eaeefb, 434px 0 0 -1rem #eaeefb, 435px 0 0 -1rem #eaeefb, 436px 0 0 -1rem #eaeefb, 437px 0 0 -1rem #eaeefb, 438px 0 0 -1rem #eaeefb, 439px 0 0 -1rem #eaeefb, 440px 0 0 -1rem #eaeefb, 441px 0 0 -1rem #eaeefb, 442px 0 0 -1rem #eaeefb, 443px 0 0 -1rem #eaeefb, 444px 0 0 -1rem #eaeefb, 445px 0 0 -1rem #eaeefb, 446px 0 0 -1rem #eaeefb, 447px 0 0 -1rem #eaeefb, 448px 0 0 -1rem #eaeefb, 449px 0 0 -1rem #eaeefb, 450px 0 0 -1rem #eaeefb, 451px 0 0 -1rem #eaeefb, 452px 0 0 -1rem #eaeefb, 453px 0 0 -1rem #eaeefb, 454px 0 0 -1rem #eaeefb, 455px 0 0 -1rem #eaeefb, 456px 0 0 -1rem #eaeefb, 457px 0 0 -1rem #eaeefb, 458px 0 0 -1rem #eaeefb, 459px 0 0 -1rem #eaeefb, 460px 0 0 -1rem #eaeefb, 461px 0 0 -1rem #eaeefb, 462px 0 0 -1rem #eaeefb, 463px 0 0 -1rem #eaeefb, 464px 0 0 -1rem #eaeefb, 465px 0 0 -1rem #eaeefb, 466px 0 0 -1rem #eaeefb, 467px 0 0 -1rem #eaeefb, 468px 0 0 -1rem #eaeefb, 469px 0 0 -1rem #eaeefb, 470px 0 0 -1rem #eaeefb, 471px 0 0 -1rem #eaeefb, 472px 0 0 -1rem #eaeefb, 473px 0 0 -1rem #eaeefb, 474px 0 0 -1rem #eaeefb, 475px 0 0 -1rem #eaeefb, 476px 0 0 -1rem #eaeefb, 477px 0 0 -1rem #eaeefb, 478px 0 0 -1rem #eaeefb, 479px 0 0 -1rem #eaeefb, 480px 0 0 -1rem #eaeefb, 481px 0 0 -1rem #eaeefb, 482px 0 0 -1rem #eaeefb, 483px 0 0 -1rem #eaeefb, 484px 0 0 -1rem #eaeefb, 485px 0 0 -1rem #eaeefb, 486px 0 0 -1rem #eaeefb, 487px 0 0 -1rem #eaeefb, 488px 0 0 -1rem #eaeefb, 489px 0 0 -1rem #eaeefb, 490px 0 0 -1rem #eaeefb, 491px 0 0 -1rem #eaeefb, 492px 0 0 -1rem #eaeefb, 493px 0 0 -1rem #eaeefb, 494px 0 0 -1rem #eaeefb, 495px 0 0 -1rem #eaeefb, 496px 0 0 -1rem #eaeefb, 497px 0 0 -1rem #eaeefb, 498px 0 0 -1rem #eaeefb, 499px 0 0 -1rem #eaeefb, 500px 0 0 -1rem #eaeefb, 501px 0 0 -1rem #eaeefb, 502px 0 0 -1rem #eaeefb, 503px 0 0 -1rem #eaeefb, 504px 0 0 -1rem #eaeefb, 505px 0 0 -1rem #eaeefb, 506px 0 0 -1rem #eaeefb, 507px 0 0 -1rem #eaeefb, 508px 0 0 -1rem #eaeefb, 509px 0 0 -1rem #eaeefb, 510px 0 0 -1rem #eaeefb, 511px 0 0 -1rem #eaeefb, 512px 0 0 -1rem #eaeefb, 513px 0 0 -1rem #eaeefb, 514px 0 0 -1rem #eaeefb, 515px 0 0 -1rem #eaeefb, 516px 0 0 -1rem #eaeefb, 517px 0 0 -1rem #eaeefb, 518px 0 0 -1rem #eaeefb, 519px 0 0 -1rem #eaeefb, 520px 0 0 -1rem #eaeefb, 521px 0 0 -1rem #eaeefb, 522px 0 0 -1rem #eaeefb, 523px 0 0 -1rem #eaeefb, 524px 0 0 -1rem #eaeefb, 525px 0 0 -1rem #eaeefb, 526px 0 0 -1rem #eaeefb, 527px 0 0 -1rem #eaeefb, 528px 0 0 -1rem #eaeefb, 529px 0 0 -1rem #eaeefb, 530px 0 0 -1rem #eaeefb, 531px 0 0 -1rem #eaeefb, 532px 0 0 -1rem #eaeefb, 533px 0 0 -1rem #eaeefb, 534px 0 0 -1rem #eaeefb, 535px 0 0 -1rem #eaeefb, 536px 0 0 -1rem #eaeefb, 537px 0 0 -1rem #eaeefb, 538px 0 0 -1rem #eaeefb, 539px 0 0 -1rem #eaeefb, 540px 0 0 -1rem #eaeefb, 541px 0 0 -1rem #eaeefb, 542px 0 0 -1rem #eaeefb, 543px 0 0 -1rem #eaeefb, 544px 0 0 -1rem #eaeefb, 545px 0 0 -1rem #eaeefb, 546px 0 0 -1rem #eaeefb, 547px 0 0 -1rem #eaeefb, 548px 0 0 -1rem #eaeefb, 549px 0 0 -1rem #eaeefb, 550px 0 0 -1rem #eaeefb, 0 3px 8px -1px #10d5c2;
+  cursor: pointer;
+  appearance: none;
+}
+.range input::-webkit-slider-thumb:hover {
+  background-color: #0fb8a7;
+}
+
+@media only screen and (max-width: 800px) {
+  .range {
+    top: -30vw;
+    margin-top: 0rem;
+  }
+  .range input {
+    height: 15vw;
+  }
+  .range input::-webkit-slider-runnable-track {
+    height: 1.875vw;
+  }
+  .range input::-webkit-slider-thumb {
+    top: -3.75vw;
+    width: 9.375vw;
+    height: 9.375vw;
+    background-size: 60% 40%;
+    box-shadow: 1rem 0 0 -3.75vw #eaeefb, 6px 0 0 -3.75vw #eaeefb, 7px 0 0 -3.75vw #eaeefb, 8px 0 0 -3.75vw #eaeefb, 9px 0 0 -3.75vw #eaeefb, 10px 0 0 -3.75vw #eaeefb, 11px 0 0 -3.75vw #eaeefb, 12px 0 0 -3.75vw #eaeefb, 13px 0 0 -3.75vw #eaeefb, 14px 0 0 -3.75vw #eaeefb, 15px 0 0 -3.75vw #eaeefb, 16px 0 0 -3.75vw #eaeefb, 17px 0 0 -3.75vw #eaeefb, 18px 0 0 -3.75vw #eaeefb, 19px 0 0 -3.75vw #eaeefb, 20px 0 0 -3.75vw #eaeefb, 21px 0 0 -3.75vw #eaeefb, 22px 0 0 -3.75vw #eaeefb, 23px 0 0 -3.75vw #eaeefb, 24px 0 0 -3.75vw #eaeefb, 25px 0 0 -3.75vw #eaeefb, 26px 0 0 -3.75vw #eaeefb, 27px 0 0 -3.75vw #eaeefb, 28px 0 0 -3.75vw #eaeefb, 29px 0 0 -3.75vw #eaeefb, 30px 0 0 -3.75vw #eaeefb, 31px 0 0 -3.75vw #eaeefb, 32px 0 0 -3.75vw #eaeefb, 33px 0 0 -3.75vw #eaeefb, 34px 0 0 -3.75vw #eaeefb, 35px 0 0 -3.75vw #eaeefb, 36px 0 0 -3.75vw #eaeefb, 37px 0 0 -3.75vw #eaeefb, 38px 0 0 -3.75vw #eaeefb, 39px 0 0 -3.75vw #eaeefb, 40px 0 0 -3.75vw #eaeefb, 41px 0 0 -3.75vw #eaeefb, 42px 0 0 -3.75vw #eaeefb, 43px 0 0 -3.75vw #eaeefb, 44px 0 0 -3.75vw #eaeefb, 45px 0 0 -3.75vw #eaeefb, 46px 0 0 -3.75vw #eaeefb, 47px 0 0 -3.75vw #eaeefb, 48px 0 0 -3.75vw #eaeefb, 49px 0 0 -3.75vw #eaeefb, 50px 0 0 -3.75vw #eaeefb, 51px 0 0 -3.75vw #eaeefb, 52px 0 0 -3.75vw #eaeefb, 53px 0 0 -3.75vw #eaeefb, 54px 0 0 -3.75vw #eaeefb, 55px 0 0 -3.75vw #eaeefb, 56px 0 0 -3.75vw #eaeefb, 57px 0 0 -3.75vw #eaeefb, 58px 0 0 -3.75vw #eaeefb, 59px 0 0 -3.75vw #eaeefb, 60px 0 0 -3.75vw #eaeefb, 61px 0 0 -3.75vw #eaeefb, 62px 0 0 -3.75vw #eaeefb, 63px 0 0 -3.75vw #eaeefb, 64px 0 0 -3.75vw #eaeefb, 65px 0 0 -3.75vw #eaeefb, 66px 0 0 -3.75vw #eaeefb, 67px 0 0 -3.75vw #eaeefb, 68px 0 0 -3.75vw #eaeefb, 69px 0 0 -3.75vw #eaeefb, 70px 0 0 -3.75vw #eaeefb, 71px 0 0 -3.75vw #eaeefb, 72px 0 0 -3.75vw #eaeefb, 73px 0 0 -3.75vw #eaeefb, 74px 0 0 -3.75vw #eaeefb, 75px 0 0 -3.75vw #eaeefb, 76px 0 0 -3.75vw #eaeefb, 77px 0 0 -3.75vw #eaeefb, 78px 0 0 -3.75vw #eaeefb, 79px 0 0 -3.75vw #eaeefb, 80px 0 0 -3.75vw #eaeefb, 81px 0 0 -3.75vw #eaeefb, 82px 0 0 -3.75vw #eaeefb, 83px 0 0 -3.75vw #eaeefb, 84px 0 0 -3.75vw #eaeefb, 85px 0 0 -3.75vw #eaeefb, 86px 0 0 -3.75vw #eaeefb, 87px 0 0 -3.75vw #eaeefb, 88px 0 0 -3.75vw #eaeefb, 89px 0 0 -3.75vw #eaeefb, 90px 0 0 -3.75vw #eaeefb, 91px 0 0 -3.75vw #eaeefb, 92px 0 0 -3.75vw #eaeefb, 93px 0 0 -3.75vw #eaeefb, 94px 0 0 -3.75vw #eaeefb, 95px 0 0 -3.75vw #eaeefb, 96px 0 0 -3.75vw #eaeefb, 97px 0 0 -3.75vw #eaeefb, 98px 0 0 -3.75vw #eaeefb, 99px 0 0 -3.75vw #eaeefb, 100px 0 0 -3.75vw #eaeefb, 101px 0 0 -3.75vw #eaeefb, 102px 0 0 -3.75vw #eaeefb, 103px 0 0 -3.75vw #eaeefb, 104px 0 0 -3.75vw #eaeefb, 105px 0 0 -3.75vw #eaeefb, 106px 0 0 -3.75vw #eaeefb, 107px 0 0 -3.75vw #eaeefb, 108px 0 0 -3.75vw #eaeefb, 109px 0 0 -3.75vw #eaeefb, 110px 0 0 -3.75vw #eaeefb, 111px 0 0 -3.75vw #eaeefb, 112px 0 0 -3.75vw #eaeefb, 113px 0 0 -3.75vw #eaeefb, 114px 0 0 -3.75vw #eaeefb, 115px 0 0 -3.75vw #eaeefb, 116px 0 0 -3.75vw #eaeefb, 117px 0 0 -3.75vw #eaeefb, 118px 0 0 -3.75vw #eaeefb, 119px 0 0 -3.75vw #eaeefb, 120px 0 0 -3.75vw #eaeefb, 121px 0 0 -3.75vw #eaeefb, 122px 0 0 -3.75vw #eaeefb, 123px 0 0 -3.75vw #eaeefb, 124px 0 0 -3.75vw #eaeefb, 125px 0 0 -3.75vw #eaeefb, 126px 0 0 -3.75vw #eaeefb, 127px 0 0 -3.75vw #eaeefb, 128px 0 0 -3.75vw #eaeefb, 129px 0 0 -3.75vw #eaeefb, 130px 0 0 -3.75vw #eaeefb, 131px 0 0 -3.75vw #eaeefb, 132px 0 0 -3.75vw #eaeefb, 133px 0 0 -3.75vw #eaeefb, 134px 0 0 -3.75vw #eaeefb, 135px 0 0 -3.75vw #eaeefb, 136px 0 0 -3.75vw #eaeefb, 137px 0 0 -3.75vw #eaeefb, 138px 0 0 -3.75vw #eaeefb, 139px 0 0 -3.75vw #eaeefb, 140px 0 0 -3.75vw #eaeefb, 141px 0 0 -3.75vw #eaeefb, 142px 0 0 -3.75vw #eaeefb, 143px 0 0 -3.75vw #eaeefb, 144px 0 0 -3.75vw #eaeefb, 145px 0 0 -3.75vw #eaeefb, 146px 0 0 -3.75vw #eaeefb, 147px 0 0 -3.75vw #eaeefb, 148px 0 0 -3.75vw #eaeefb, 149px 0 0 -3.75vw #eaeefb, 150px 0 0 -3.75vw #eaeefb, 151px 0 0 -3.75vw #eaeefb, 152px 0 0 -3.75vw #eaeefb, 153px 0 0 -3.75vw #eaeefb, 154px 0 0 -3.75vw #eaeefb, 155px 0 0 -3.75vw #eaeefb, 156px 0 0 -3.75vw #eaeefb, 157px 0 0 -3.75vw #eaeefb, 158px 0 0 -3.75vw #eaeefb, 159px 0 0 -3.75vw #eaeefb, 160px 0 0 -3.75vw #eaeefb, 161px 0 0 -3.75vw #eaeefb, 162px 0 0 -3.75vw #eaeefb, 163px 0 0 -3.75vw #eaeefb, 164px 0 0 -3.75vw #eaeefb, 165px 0 0 -3.75vw #eaeefb, 166px 0 0 -3.75vw #eaeefb, 167px 0 0 -3.75vw #eaeefb, 168px 0 0 -3.75vw #eaeefb, 169px 0 0 -3.75vw #eaeefb, 170px 0 0 -3.75vw #eaeefb, 171px 0 0 -3.75vw #eaeefb, 172px 0 0 -3.75vw #eaeefb, 173px 0 0 -3.75vw #eaeefb, 174px 0 0 -3.75vw #eaeefb, 175px 0 0 -3.75vw #eaeefb, 176px 0 0 -3.75vw #eaeefb, 177px 0 0 -3.75vw #eaeefb, 178px 0 0 -3.75vw #eaeefb, 179px 0 0 -3.75vw #eaeefb, 180px 0 0 -3.75vw #eaeefb, 181px 0 0 -3.75vw #eaeefb, 182px 0 0 -3.75vw #eaeefb, 183px 0 0 -3.75vw #eaeefb, 184px 0 0 -3.75vw #eaeefb, 185px 0 0 -3.75vw #eaeefb, 186px 0 0 -3.75vw #eaeefb, 187px 0 0 -3.75vw #eaeefb, 188px 0 0 -3.75vw #eaeefb, 189px 0 0 -3.75vw #eaeefb, 190px 0 0 -3.75vw #eaeefb, 191px 0 0 -3.75vw #eaeefb, 192px 0 0 -3.75vw #eaeefb, 193px 0 0 -3.75vw #eaeefb, 194px 0 0 -3.75vw #eaeefb, 195px 0 0 -3.75vw #eaeefb, 196px 0 0 -3.75vw #eaeefb, 197px 0 0 -3.75vw #eaeefb, 198px 0 0 -3.75vw #eaeefb, 199px 0 0 -3.75vw #eaeefb, 200px 0 0 -3.75vw #eaeefb, 201px 0 0 -3.75vw #eaeefb, 202px 0 0 -3.75vw #eaeefb, 203px 0 0 -3.75vw #eaeefb, 204px 0 0 -3.75vw #eaeefb, 205px 0 0 -3.75vw #eaeefb, 206px 0 0 -3.75vw #eaeefb, 207px 0 0 -3.75vw #eaeefb, 208px 0 0 -3.75vw #eaeefb, 209px 0 0 -3.75vw #eaeefb, 210px 0 0 -3.75vw #eaeefb, 211px 0 0 -3.75vw #eaeefb, 212px 0 0 -3.75vw #eaeefb, 213px 0 0 -3.75vw #eaeefb, 214px 0 0 -3.75vw #eaeefb, 215px 0 0 -3.75vw #eaeefb, 216px 0 0 -3.75vw #eaeefb, 217px 0 0 -3.75vw #eaeefb, 218px 0 0 -3.75vw #eaeefb, 219px 0 0 -3.75vw #eaeefb, 220px 0 0 -3.75vw #eaeefb, 221px 0 0 -3.75vw #eaeefb, 222px 0 0 -3.75vw #eaeefb, 223px 0 0 -3.75vw #eaeefb, 224px 0 0 -3.75vw #eaeefb, 225px 0 0 -3.75vw #eaeefb, 226px 0 0 -3.75vw #eaeefb, 227px 0 0 -3.75vw #eaeefb, 228px 0 0 -3.75vw #eaeefb, 229px 0 0 -3.75vw #eaeefb, 230px 0 0 -3.75vw #eaeefb, 231px 0 0 -3.75vw #eaeefb, 232px 0 0 -3.75vw #eaeefb, 233px 0 0 -3.75vw #eaeefb, 234px 0 0 -3.75vw #eaeefb, 235px 0 0 -3.75vw #eaeefb, 236px 0 0 -3.75vw #eaeefb, 237px 0 0 -3.75vw #eaeefb, 238px 0 0 -3.75vw #eaeefb, 239px 0 0 -3.75vw #eaeefb, 240px 0 0 -3.75vw #eaeefb, 241px 0 0 -3.75vw #eaeefb, 242px 0 0 -3.75vw #eaeefb, 243px 0 0 -3.75vw #eaeefb, 244px 0 0 -3.75vw #eaeefb, 245px 0 0 -3.75vw #eaeefb, 246px 0 0 -3.75vw #eaeefb, 247px 0 0 -3.75vw #eaeefb, 248px 0 0 -3.75vw #eaeefb, 249px 0 0 -3.75vw #eaeefb, 250px 0 0 -3.75vw #eaeefb, 251px 0 0 -3.75vw #eaeefb, 252px 0 0 -3.75vw #eaeefb, 253px 0 0 -3.75vw #eaeefb, 254px 0 0 -3.75vw #eaeefb, 255px 0 0 -3.75vw #eaeefb, 256px 0 0 -3.75vw #eaeefb, 257px 0 0 -3.75vw #eaeefb, 258px 0 0 -3.75vw #eaeefb, 259px 0 0 -3.75vw #eaeefb, 260px 0 0 -3.75vw #eaeefb, 261px 0 0 -3.75vw #eaeefb, 262px 0 0 -3.75vw #eaeefb, 263px 0 0 -3.75vw #eaeefb, 264px 0 0 -3.75vw #eaeefb, 265px 0 0 -3.75vw #eaeefb, 266px 0 0 -3.75vw #eaeefb, 267px 0 0 -3.75vw #eaeefb, 268px 0 0 -3.75vw #eaeefb, 269px 0 0 -3.75vw #eaeefb, 270px 0 0 -3.75vw #eaeefb, 271px 0 0 -3.75vw #eaeefb, 272px 0 0 -3.75vw #eaeefb, 273px 0 0 -3.75vw #eaeefb, 274px 0 0 -3.75vw #eaeefb, 275px 0 0 -3.75vw #eaeefb, 276px 0 0 -3.75vw #eaeefb, 277px 0 0 -3.75vw #eaeefb, 278px 0 0 -3.75vw #eaeefb, 279px 0 0 -3.75vw #eaeefb, 280px 0 0 -3.75vw #eaeefb, 281px 0 0 -3.75vw #eaeefb, 282px 0 0 -3.75vw #eaeefb, 283px 0 0 -3.75vw #eaeefb, 284px 0 0 -3.75vw #eaeefb, 285px 0 0 -3.75vw #eaeefb, 286px 0 0 -3.75vw #eaeefb, 287px 0 0 -3.75vw #eaeefb, 288px 0 0 -3.75vw #eaeefb, 289px 0 0 -3.75vw #eaeefb, 290px 0 0 -3.75vw #eaeefb, 291px 0 0 -3.75vw #eaeefb, 292px 0 0 -3.75vw #eaeefb, 293px 0 0 -3.75vw #eaeefb, 294px 0 0 -3.75vw #eaeefb, 295px 0 0 -3.75vw #eaeefb, 296px 0 0 -3.75vw #eaeefb, 297px 0 0 -3.75vw #eaeefb, 298px 0 0 -3.75vw #eaeefb, 299px 0 0 -3.75vw #eaeefb, 300px 0 0 -3.75vw #eaeefb, 301px 0 0 -3.75vw #eaeefb, 302px 0 0 -3.75vw #eaeefb, 303px 0 0 -3.75vw #eaeefb, 304px 0 0 -3.75vw #eaeefb, 305px 0 0 -3.75vw #eaeefb, 306px 0 0 -3.75vw #eaeefb, 307px 0 0 -3.75vw #eaeefb, 308px 0 0 -3.75vw #eaeefb, 309px 0 0 -3.75vw #eaeefb, 310px 0 0 -3.75vw #eaeefb, 311px 0 0 -3.75vw #eaeefb, 312px 0 0 -3.75vw #eaeefb, 313px 0 0 -3.75vw #eaeefb, 314px 0 0 -3.75vw #eaeefb, 315px 0 0 -3.75vw #eaeefb, 316px 0 0 -3.75vw #eaeefb, 317px 0 0 -3.75vw #eaeefb, 318px 0 0 -3.75vw #eaeefb, 319px 0 0 -3.75vw #eaeefb, 320px 0 0 -3.75vw #eaeefb, 321px 0 0 -3.75vw #eaeefb, 322px 0 0 -3.75vw #eaeefb, 323px 0 0 -3.75vw #eaeefb, 324px 0 0 -3.75vw #eaeefb, 325px 0 0 -3.75vw #eaeefb, 326px 0 0 -3.75vw #eaeefb, 327px 0 0 -3.75vw #eaeefb, 328px 0 0 -3.75vw #eaeefb, 329px 0 0 -3.75vw #eaeefb, 330px 0 0 -3.75vw #eaeefb, 331px 0 0 -3.75vw #eaeefb, 332px 0 0 -3.75vw #eaeefb, 333px 0 0 -3.75vw #eaeefb, 334px 0 0 -3.75vw #eaeefb, 335px 0 0 -3.75vw #eaeefb, 336px 0 0 -3.75vw #eaeefb, 337px 0 0 -3.75vw #eaeefb, 338px 0 0 -3.75vw #eaeefb, 339px 0 0 -3.75vw #eaeefb, 340px 0 0 -3.75vw #eaeefb, 341px 0 0 -3.75vw #eaeefb, 342px 0 0 -3.75vw #eaeefb, 343px 0 0 -3.75vw #eaeefb, 344px 0 0 -3.75vw #eaeefb, 345px 0 0 -3.75vw #eaeefb, 346px 0 0 -3.75vw #eaeefb, 347px 0 0 -3.75vw #eaeefb, 348px 0 0 -3.75vw #eaeefb, 349px 0 0 -3.75vw #eaeefb, 350px 0 0 -3.75vw #eaeefb, 351px 0 0 -3.75vw #eaeefb, 352px 0 0 -3.75vw #eaeefb, 353px 0 0 -3.75vw #eaeefb, 354px 0 0 -3.75vw #eaeefb, 355px 0 0 -3.75vw #eaeefb, 356px 0 0 -3.75vw #eaeefb, 357px 0 0 -3.75vw #eaeefb, 358px 0 0 -3.75vw #eaeefb, 359px 0 0 -3.75vw #eaeefb, 360px 0 0 -3.75vw #eaeefb, 361px 0 0 -3.75vw #eaeefb, 362px 0 0 -3.75vw #eaeefb, 363px 0 0 -3.75vw #eaeefb, 364px 0 0 -3.75vw #eaeefb, 365px 0 0 -3.75vw #eaeefb, 366px 0 0 -3.75vw #eaeefb, 367px 0 0 -3.75vw #eaeefb, 368px 0 0 -3.75vw #eaeefb, 369px 0 0 -3.75vw #eaeefb, 370px 0 0 -3.75vw #eaeefb, 371px 0 0 -3.75vw #eaeefb, 372px 0 0 -3.75vw #eaeefb, 373px 0 0 -3.75vw #eaeefb, 374px 0 0 -3.75vw #eaeefb, 375px 0 0 -3.75vw #eaeefb, 376px 0 0 -3.75vw #eaeefb, 377px 0 0 -3.75vw #eaeefb, 378px 0 0 -3.75vw #eaeefb, 379px 0 0 -3.75vw #eaeefb, 380px 0 0 -3.75vw #eaeefb, 381px 0 0 -3.75vw #eaeefb, 382px 0 0 -3.75vw #eaeefb, 383px 0 0 -3.75vw #eaeefb, 384px 0 0 -3.75vw #eaeefb, 385px 0 0 -3.75vw #eaeefb, 386px 0 0 -3.75vw #eaeefb, 387px 0 0 -3.75vw #eaeefb, 388px 0 0 -3.75vw #eaeefb, 389px 0 0 -3.75vw #eaeefb, 390px 0 0 -3.75vw #eaeefb, 391px 0 0 -3.75vw #eaeefb, 392px 0 0 -3.75vw #eaeefb, 393px 0 0 -3.75vw #eaeefb, 394px 0 0 -3.75vw #eaeefb, 395px 0 0 -3.75vw #eaeefb, 396px 0 0 -3.75vw #eaeefb, 397px 0 0 -3.75vw #eaeefb, 398px 0 0 -3.75vw #eaeefb, 399px 0 0 -3.75vw #eaeefb, 400px 0 0 -3.75vw #eaeefb, 401px 0 0 -3.75vw #eaeefb, 402px 0 0 -3.75vw #eaeefb, 403px 0 0 -3.75vw #eaeefb, 404px 0 0 -3.75vw #eaeefb, 405px 0 0 -3.75vw #eaeefb, 406px 0 0 -3.75vw #eaeefb, 407px 0 0 -3.75vw #eaeefb, 408px 0 0 -3.75vw #eaeefb, 409px 0 0 -3.75vw #eaeefb, 410px 0 0 -3.75vw #eaeefb, 411px 0 0 -3.75vw #eaeefb, 412px 0 0 -3.75vw #eaeefb, 413px 0 0 -3.75vw #eaeefb, 414px 0 0 -3.75vw #eaeefb, 415px 0 0 -3.75vw #eaeefb, 416px 0 0 -3.75vw #eaeefb, 417px 0 0 -3.75vw #eaeefb, 418px 0 0 -3.75vw #eaeefb, 419px 0 0 -3.75vw #eaeefb, 420px 0 0 -3.75vw #eaeefb, 421px 0 0 -3.75vw #eaeefb, 422px 0 0 -3.75vw #eaeefb, 423px 0 0 -3.75vw #eaeefb, 424px 0 0 -3.75vw #eaeefb, 425px 0 0 -3.75vw #eaeefb, 426px 0 0 -3.75vw #eaeefb, 427px 0 0 -3.75vw #eaeefb, 428px 0 0 -3.75vw #eaeefb, 429px 0 0 -3.75vw #eaeefb, 430px 0 0 -3.75vw #eaeefb, 431px 0 0 -3.75vw #eaeefb, 432px 0 0 -3.75vw #eaeefb, 433px 0 0 -3.75vw #eaeefb, 434px 0 0 -3.75vw #eaeefb, 435px 0 0 -3.75vw #eaeefb, 436px 0 0 -3.75vw #eaeefb, 437px 0 0 -3.75vw #eaeefb, 438px 0 0 -3.75vw #eaeefb, 439px 0 0 -3.75vw #eaeefb, 440px 0 0 -3.75vw #eaeefb, 441px 0 0 -3.75vw #eaeefb, 442px 0 0 -3.75vw #eaeefb, 443px 0 0 -3.75vw #eaeefb, 444px 0 0 -3.75vw #eaeefb, 445px 0 0 -3.75vw #eaeefb, 446px 0 0 -3.75vw #eaeefb, 447px 0 0 -3.75vw #eaeefb, 448px 0 0 -3.75vw #eaeefb, 449px 0 0 -3.75vw #eaeefb, 450px 0 0 -3.75vw #eaeefb, 451px 0 0 -3.75vw #eaeefb, 452px 0 0 -3.75vw #eaeefb, 453px 0 0 -3.75vw #eaeefb, 454px 0 0 -3.75vw #eaeefb, 455px 0 0 -3.75vw #eaeefb, 456px 0 0 -3.75vw #eaeefb, 457px 0 0 -3.75vw #eaeefb, 458px 0 0 -3.75vw #eaeefb, 459px 0 0 -3.75vw #eaeefb, 460px 0 0 -3.75vw #eaeefb, 461px 0 0 -3.75vw #eaeefb, 462px 0 0 -3.75vw #eaeefb, 463px 0 0 -3.75vw #eaeefb, 464px 0 0 -3.75vw #eaeefb, 465px 0 0 -3.75vw #eaeefb, 466px 0 0 -3.75vw #eaeefb, 467px 0 0 -3.75vw #eaeefb, 468px 0 0 -3.75vw #eaeefb, 469px 0 0 -3.75vw #eaeefb, 470px 0 0 -3.75vw #eaeefb, 471px 0 0 -3.75vw #eaeefb, 472px 0 0 -3.75vw #eaeefb, 473px 0 0 -3.75vw #eaeefb, 474px 0 0 -3.75vw #eaeefb, 475px 0 0 -3.75vw #eaeefb, 476px 0 0 -3.75vw #eaeefb, 477px 0 0 -3.75vw #eaeefb, 478px 0 0 -3.75vw #eaeefb, 479px 0 0 -3.75vw #eaeefb, 480px 0 0 -3.75vw #eaeefb, 481px 0 0 -3.75vw #eaeefb, 482px 0 0 -3.75vw #eaeefb, 483px 0 0 -3.75vw #eaeefb, 484px 0 0 -3.75vw #eaeefb, 485px 0 0 -3.75vw #eaeefb, 486px 0 0 -3.75vw #eaeefb, 487px 0 0 -3.75vw #eaeefb, 488px 0 0 -3.75vw #eaeefb, 489px 0 0 -3.75vw #eaeefb, 490px 0 0 -3.75vw #eaeefb, 491px 0 0 -3.75vw #eaeefb, 492px 0 0 -3.75vw #eaeefb, 493px 0 0 -3.75vw #eaeefb, 494px 0 0 -3.75vw #eaeefb, 495px 0 0 -3.75vw #eaeefb, 496px 0 0 -3.75vw #eaeefb, 497px 0 0 -3.75vw #eaeefb, 498px 0 0 -3.75vw #eaeefb, 499px 0 0 -3.75vw #eaeefb, 500px 0 0 -3.75vw #eaeefb, 501px 0 0 -3.75vw #eaeefb, 502px 0 0 -3.75vw #eaeefb, 503px 0 0 -3.75vw #eaeefb, 504px 0 0 -3.75vw #eaeefb, 505px 0 0 -3.75vw #eaeefb, 506px 0 0 -3.75vw #eaeefb, 507px 0 0 -3.75vw #eaeefb, 508px 0 0 -3.75vw #eaeefb, 509px 0 0 -3.75vw #eaeefb, 510px 0 0 -3.75vw #eaeefb, 511px 0 0 -3.75vw #eaeefb, 512px 0 0 -3.75vw #eaeefb, 513px 0 0 -3.75vw #eaeefb, 514px 0 0 -3.75vw #eaeefb, 515px 0 0 -3.75vw #eaeefb, 516px 0 0 -3.75vw #eaeefb, 517px 0 0 -3.75vw #eaeefb, 518px 0 0 -3.75vw #eaeefb, 519px 0 0 -3.75vw #eaeefb, 520px 0 0 -3.75vw #eaeefb, 521px 0 0 -3.75vw #eaeefb, 522px 0 0 -3.75vw #eaeefb, 523px 0 0 -3.75vw #eaeefb, 524px 0 0 -3.75vw #eaeefb, 525px 0 0 -3.75vw #eaeefb, 526px 0 0 -3.75vw #eaeefb, 527px 0 0 -3.75vw #eaeefb, 528px 0 0 -3.75vw #eaeefb, 529px 0 0 -3.75vw #eaeefb, 530px 0 0 -3.75vw #eaeefb, 531px 0 0 -3.75vw #eaeefb, 532px 0 0 -3.75vw #eaeefb, 533px 0 0 -3.75vw #eaeefb, 534px 0 0 -3.75vw #eaeefb, 535px 0 0 -3.75vw #eaeefb, 536px 0 0 -3.75vw #eaeefb, 537px 0 0 -3.75vw #eaeefb, 538px 0 0 -3.75vw #eaeefb, 539px 0 0 -3.75vw #eaeefb, 540px 0 0 -3.75vw #eaeefb, 541px 0 0 -3.75vw #eaeefb, 542px 0 0 -3.75vw #eaeefb, 543px 0 0 -3.75vw #eaeefb, 544px 0 0 -3.75vw #eaeefb, 545px 0 0 -3.75vw #eaeefb, 546px 0 0 -3.75vw #eaeefb, 547px 0 0 -3.75vw #eaeefb, 548px 0 0 -3.75vw #eaeefb, 549px 0 0 -3.75vw #eaeefb, 550px 0 0 -3.75vw #eaeefb, 0 5px 15px -3px #10d5c2;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .range {
+    top: -33vw;
+  }
+  .range input {
+    height: 20vw;
+  }
+  .range input::-webkit-slider-thumb {
+    top: -3.8vw;
+    box-shadow: 1rem 0 0 -3.75vw #eaeefb, 6px 0 0 -3.75vw #eaeefb, 7px 0 0 -3.75vw #eaeefb, 8px 0 0 -3.75vw #eaeefb, 9px 0 0 -3.75vw #eaeefb, 10px 0 0 -3.75vw #eaeefb, 11px 0 0 -3.75vw #eaeefb, 12px 0 0 -3.75vw #eaeefb, 13px 0 0 -3.75vw #eaeefb, 14px 0 0 -3.75vw #eaeefb, 15px 0 0 -3.75vw #eaeefb, 16px 0 0 -3.75vw #eaeefb, 17px 0 0 -3.75vw #eaeefb, 18px 0 0 -3.75vw #eaeefb, 19px 0 0 -3.75vw #eaeefb, 20px 0 0 -3.75vw #eaeefb, 21px 0 0 -3.75vw #eaeefb, 22px 0 0 -3.75vw #eaeefb, 23px 0 0 -3.75vw #eaeefb, 24px 0 0 -3.75vw #eaeefb, 25px 0 0 -3.75vw #eaeefb, 26px 0 0 -3.75vw #eaeefb, 27px 0 0 -3.75vw #eaeefb, 28px 0 0 -3.75vw #eaeefb, 29px 0 0 -3.75vw #eaeefb, 30px 0 0 -3.75vw #eaeefb, 31px 0 0 -3.75vw #eaeefb, 32px 0 0 -3.75vw #eaeefb, 33px 0 0 -3.75vw #eaeefb, 34px 0 0 -3.75vw #eaeefb, 35px 0 0 -3.75vw #eaeefb, 36px 0 0 -3.75vw #eaeefb, 37px 0 0 -3.75vw #eaeefb, 38px 0 0 -3.75vw #eaeefb, 39px 0 0 -3.75vw #eaeefb, 40px 0 0 -3.75vw #eaeefb, 41px 0 0 -3.75vw #eaeefb, 42px 0 0 -3.75vw #eaeefb, 43px 0 0 -3.75vw #eaeefb, 44px 0 0 -3.75vw #eaeefb, 45px 0 0 -3.75vw #eaeefb, 46px 0 0 -3.75vw #eaeefb, 47px 0 0 -3.75vw #eaeefb, 48px 0 0 -3.75vw #eaeefb, 49px 0 0 -3.75vw #eaeefb, 50px 0 0 -3.75vw #eaeefb, 51px 0 0 -3.75vw #eaeefb, 52px 0 0 -3.75vw #eaeefb, 53px 0 0 -3.75vw #eaeefb, 54px 0 0 -3.75vw #eaeefb, 55px 0 0 -3.75vw #eaeefb, 56px 0 0 -3.75vw #eaeefb, 57px 0 0 -3.75vw #eaeefb, 58px 0 0 -3.75vw #eaeefb, 59px 0 0 -3.75vw #eaeefb, 60px 0 0 -3.75vw #eaeefb, 61px 0 0 -3.75vw #eaeefb, 62px 0 0 -3.75vw #eaeefb, 63px 0 0 -3.75vw #eaeefb, 64px 0 0 -3.75vw #eaeefb, 65px 0 0 -3.75vw #eaeefb, 66px 0 0 -3.75vw #eaeefb, 67px 0 0 -3.75vw #eaeefb, 68px 0 0 -3.75vw #eaeefb, 69px 0 0 -3.75vw #eaeefb, 70px 0 0 -3.75vw #eaeefb, 71px 0 0 -3.75vw #eaeefb, 72px 0 0 -3.75vw #eaeefb, 73px 0 0 -3.75vw #eaeefb, 74px 0 0 -3.75vw #eaeefb, 75px 0 0 -3.75vw #eaeefb, 76px 0 0 -3.75vw #eaeefb, 77px 0 0 -3.75vw #eaeefb, 78px 0 0 -3.75vw #eaeefb, 79px 0 0 -3.75vw #eaeefb, 80px 0 0 -3.75vw #eaeefb, 81px 0 0 -3.75vw #eaeefb, 82px 0 0 -3.75vw #eaeefb, 83px 0 0 -3.75vw #eaeefb, 84px 0 0 -3.75vw #eaeefb, 85px 0 0 -3.75vw #eaeefb, 86px 0 0 -3.75vw #eaeefb, 87px 0 0 -3.75vw #eaeefb, 88px 0 0 -3.75vw #eaeefb, 89px 0 0 -3.75vw #eaeefb, 90px 0 0 -3.75vw #eaeefb, 91px 0 0 -3.75vw #eaeefb, 92px 0 0 -3.75vw #eaeefb, 93px 0 0 -3.75vw #eaeefb, 94px 0 0 -3.75vw #eaeefb, 95px 0 0 -3.75vw #eaeefb, 96px 0 0 -3.75vw #eaeefb, 97px 0 0 -3.75vw #eaeefb, 98px 0 0 -3.75vw #eaeefb, 99px 0 0 -3.75vw #eaeefb, 100px 0 0 -3.75vw #eaeefb, 101px 0 0 -3.75vw #eaeefb, 102px 0 0 -3.75vw #eaeefb, 103px 0 0 -3.75vw #eaeefb, 104px 0 0 -3.75vw #eaeefb, 105px 0 0 -3.75vw #eaeefb, 106px 0 0 -3.75vw #eaeefb, 107px 0 0 -3.75vw #eaeefb, 108px 0 0 -3.75vw #eaeefb, 109px 0 0 -3.75vw #eaeefb, 110px 0 0 -3.75vw #eaeefb, 111px 0 0 -3.75vw #eaeefb, 112px 0 0 -3.75vw #eaeefb, 113px 0 0 -3.75vw #eaeefb, 114px 0 0 -3.75vw #eaeefb, 115px 0 0 -3.75vw #eaeefb, 116px 0 0 -3.75vw #eaeefb, 117px 0 0 -3.75vw #eaeefb, 118px 0 0 -3.75vw #eaeefb, 119px 0 0 -3.75vw #eaeefb, 120px 0 0 -3.75vw #eaeefb, 121px 0 0 -3.75vw #eaeefb, 122px 0 0 -3.75vw #eaeefb, 123px 0 0 -3.75vw #eaeefb, 124px 0 0 -3.75vw #eaeefb, 125px 0 0 -3.75vw #eaeefb, 126px 0 0 -3.75vw #eaeefb, 127px 0 0 -3.75vw #eaeefb, 128px 0 0 -3.75vw #eaeefb, 129px 0 0 -3.75vw #eaeefb, 130px 0 0 -3.75vw #eaeefb, 131px 0 0 -3.75vw #eaeefb, 132px 0 0 -3.75vw #eaeefb, 133px 0 0 -3.75vw #eaeefb, 134px 0 0 -3.75vw #eaeefb, 135px 0 0 -3.75vw #eaeefb, 136px 0 0 -3.75vw #eaeefb, 137px 0 0 -3.75vw #eaeefb, 138px 0 0 -3.75vw #eaeefb, 139px 0 0 -3.75vw #eaeefb, 140px 0 0 -3.75vw #eaeefb, 141px 0 0 -3.75vw #eaeefb, 142px 0 0 -3.75vw #eaeefb, 143px 0 0 -3.75vw #eaeefb, 144px 0 0 -3.75vw #eaeefb, 145px 0 0 -3.75vw #eaeefb, 146px 0 0 -3.75vw #eaeefb, 147px 0 0 -3.75vw #eaeefb, 148px 0 0 -3.75vw #eaeefb, 149px 0 0 -3.75vw #eaeefb, 150px 0 0 -3.75vw #eaeefb, 151px 0 0 -3.75vw #eaeefb, 152px 0 0 -3.75vw #eaeefb, 153px 0 0 -3.75vw #eaeefb, 154px 0 0 -3.75vw #eaeefb, 155px 0 0 -3.75vw #eaeefb, 156px 0 0 -3.75vw #eaeefb, 157px 0 0 -3.75vw #eaeefb, 158px 0 0 -3.75vw #eaeefb, 159px 0 0 -3.75vw #eaeefb, 160px 0 0 -3.75vw #eaeefb, 161px 0 0 -3.75vw #eaeefb, 162px 0 0 -3.75vw #eaeefb, 163px 0 0 -3.75vw #eaeefb, 164px 0 0 -3.75vw #eaeefb, 165px 0 0 -3.75vw #eaeefb, 166px 0 0 -3.75vw #eaeefb, 167px 0 0 -3.75vw #eaeefb, 168px 0 0 -3.75vw #eaeefb, 169px 0 0 -3.75vw #eaeefb, 170px 0 0 -3.75vw #eaeefb, 171px 0 0 -3.75vw #eaeefb, 172px 0 0 -3.75vw #eaeefb, 173px 0 0 -3.75vw #eaeefb, 174px 0 0 -3.75vw #eaeefb, 175px 0 0 -3.75vw #eaeefb, 176px 0 0 -3.75vw #eaeefb, 177px 0 0 -3.75vw #eaeefb, 178px 0 0 -3.75vw #eaeefb, 179px 0 0 -3.75vw #eaeefb, 180px 0 0 -3.75vw #eaeefb, 181px 0 0 -3.75vw #eaeefb, 182px 0 0 -3.75vw #eaeefb, 183px 0 0 -3.75vw #eaeefb, 184px 0 0 -3.75vw #eaeefb, 185px 0 0 -3.75vw #eaeefb, 186px 0 0 -3.75vw #eaeefb, 187px 0 0 -3.75vw #eaeefb, 188px 0 0 -3.75vw #eaeefb, 189px 0 0 -3.75vw #eaeefb, 190px 0 0 -3.75vw #eaeefb, 191px 0 0 -3.75vw #eaeefb, 192px 0 0 -3.75vw #eaeefb, 193px 0 0 -3.75vw #eaeefb, 194px 0 0 -3.75vw #eaeefb, 195px 0 0 -3.75vw #eaeefb, 196px 0 0 -3.75vw #eaeefb, 197px 0 0 -3.75vw #eaeefb, 198px 0 0 -3.75vw #eaeefb, 199px 0 0 -3.75vw #eaeefb, 200px 0 0 -3.75vw #eaeefb, 201px 0 0 -3.75vw #eaeefb, 202px 0 0 -3.75vw #eaeefb, 203px 0 0 -3.75vw #eaeefb, 204px 0 0 -3.75vw #eaeefb, 205px 0 0 -3.75vw #eaeefb, 206px 0 0 -3.75vw #eaeefb, 207px 0 0 -3.75vw #eaeefb, 208px 0 0 -3.75vw #eaeefb, 209px 0 0 -3.75vw #eaeefb, 210px 0 0 -3.75vw #eaeefb, 211px 0 0 -3.75vw #eaeefb, 212px 0 0 -3.75vw #eaeefb, 213px 0 0 -3.75vw #eaeefb, 214px 0 0 -3.75vw #eaeefb, 215px 0 0 -3.75vw #eaeefb, 216px 0 0 -3.75vw #eaeefb, 217px 0 0 -3.75vw #eaeefb, 218px 0 0 -3.75vw #eaeefb, 219px 0 0 -3.75vw #eaeefb, 220px 0 0 -3.75vw #eaeefb, 221px 0 0 -3.75vw #eaeefb, 222px 0 0 -3.75vw #eaeefb, 223px 0 0 -3.75vw #eaeefb, 224px 0 0 -3.75vw #eaeefb, 225px 0 0 -3.75vw #eaeefb, 226px 0 0 -3.75vw #eaeefb, 227px 0 0 -3.75vw #eaeefb, 228px 0 0 -3.75vw #eaeefb, 229px 0 0 -3.75vw #eaeefb, 230px 0 0 -3.75vw #eaeefb, 231px 0 0 -3.75vw #eaeefb, 232px 0 0 -3.75vw #eaeefb, 233px 0 0 -3.75vw #eaeefb, 234px 0 0 -3.75vw #eaeefb, 235px 0 0 -3.75vw #eaeefb, 236px 0 0 -3.75vw #eaeefb, 237px 0 0 -3.75vw #eaeefb, 238px 0 0 -3.75vw #eaeefb, 239px 0 0 -3.75vw #eaeefb, 240px 0 0 -3.75vw #eaeefb, 241px 0 0 -3.75vw #eaeefb, 242px 0 0 -3.75vw #eaeefb, 243px 0 0 -3.75vw #eaeefb, 244px 0 0 -3.75vw #eaeefb, 245px 0 0 -3.75vw #eaeefb, 246px 0 0 -3.75vw #eaeefb, 247px 0 0 -3.75vw #eaeefb, 248px 0 0 -3.75vw #eaeefb, 249px 0 0 -3.75vw #eaeefb, 250px 0 0 -3.75vw #eaeefb, 251px 0 0 -3.75vw #eaeefb, 252px 0 0 -3.75vw #eaeefb, 253px 0 0 -3.75vw #eaeefb, 254px 0 0 -3.75vw #eaeefb, 255px 0 0 -3.75vw #eaeefb, 256px 0 0 -3.75vw #eaeefb, 257px 0 0 -3.75vw #eaeefb, 258px 0 0 -3.75vw #eaeefb, 259px 0 0 -3.75vw #eaeefb, 260px 0 0 -3.75vw #eaeefb, 261px 0 0 -3.75vw #eaeefb, 262px 0 0 -3.75vw #eaeefb, 263px 0 0 -3.75vw #eaeefb, 264px 0 0 -3.75vw #eaeefb, 265px 0 0 -3.75vw #eaeefb, 266px 0 0 -3.75vw #eaeefb, 267px 0 0 -3.75vw #eaeefb, 268px 0 0 -3.75vw #eaeefb, 269px 0 0 -3.75vw #eaeefb, 270px 0 0 -3.75vw #eaeefb, 271px 0 0 -3.75vw #eaeefb, 272px 0 0 -3.75vw #eaeefb, 273px 0 0 -3.75vw #eaeefb, 274px 0 0 -3.75vw #eaeefb, 275px 0 0 -3.75vw #eaeefb, 276px 0 0 -3.75vw #eaeefb, 277px 0 0 -3.75vw #eaeefb, 278px 0 0 -3.75vw #eaeefb, 279px 0 0 -3.75vw #eaeefb, 280px 0 0 -3.75vw #eaeefb, 281px 0 0 -3.75vw #eaeefb, 282px 0 0 -3.75vw #eaeefb, 283px 0 0 -3.75vw #eaeefb, 284px 0 0 -3.75vw #eaeefb, 285px 0 0 -3.75vw #eaeefb, 286px 0 0 -3.75vw #eaeefb, 287px 0 0 -3.75vw #eaeefb, 288px 0 0 -3.75vw #eaeefb, 289px 0 0 -3.75vw #eaeefb, 290px 0 0 -3.75vw #eaeefb, 291px 0 0 -3.75vw #eaeefb, 292px 0 0 -3.75vw #eaeefb, 293px 0 0 -3.75vw #eaeefb, 294px 0 0 -3.75vw #eaeefb, 295px 0 0 -3.75vw #eaeefb, 296px 0 0 -3.75vw #eaeefb, 297px 0 0 -3.75vw #eaeefb, 298px 0 0 -3.75vw #eaeefb, 299px 0 0 -3.75vw #eaeefb, 300px 0 0 -3.75vw #eaeefb, 301px 0 0 -3.75vw #eaeefb, 302px 0 0 -3.75vw #eaeefb, 303px 0 0 -3.75vw #eaeefb, 304px 0 0 -3.75vw #eaeefb, 305px 0 0 -3.75vw #eaeefb, 306px 0 0 -3.75vw #eaeefb, 307px 0 0 -3.75vw #eaeefb, 308px 0 0 -3.75vw #eaeefb, 309px 0 0 -3.75vw #eaeefb, 310px 0 0 -3.75vw #eaeefb, 311px 0 0 -3.75vw #eaeefb, 312px 0 0 -3.75vw #eaeefb, 313px 0 0 -3.75vw #eaeefb, 314px 0 0 -3.75vw #eaeefb, 315px 0 0 -3.75vw #eaeefb, 316px 0 0 -3.75vw #eaeefb, 317px 0 0 -3.75vw #eaeefb, 318px 0 0 -3.75vw #eaeefb, 319px 0 0 -3.75vw #eaeefb, 320px 0 0 -3.75vw #eaeefb, 321px 0 0 -3.75vw #eaeefb, 322px 0 0 -3.75vw #eaeefb, 323px 0 0 -3.75vw #eaeefb, 324px 0 0 -3.75vw #eaeefb, 325px 0 0 -3.75vw #eaeefb, 326px 0 0 -3.75vw #eaeefb, 327px 0 0 -3.75vw #eaeefb, 328px 0 0 -3.75vw #eaeefb, 329px 0 0 -3.75vw #eaeefb, 330px 0 0 -3.75vw #eaeefb, 331px 0 0 -3.75vw #eaeefb, 332px 0 0 -3.75vw #eaeefb, 333px 0 0 -3.75vw #eaeefb, 334px 0 0 -3.75vw #eaeefb, 335px 0 0 -3.75vw #eaeefb, 336px 0 0 -3.75vw #eaeefb, 337px 0 0 -3.75vw #eaeefb, 338px 0 0 -3.75vw #eaeefb, 339px 0 0 -3.75vw #eaeefb, 340px 0 0 -3.75vw #eaeefb, 341px 0 0 -3.75vw #eaeefb, 342px 0 0 -3.75vw #eaeefb, 343px 0 0 -3.75vw #eaeefb, 344px 0 0 -3.75vw #eaeefb, 345px 0 0 -3.75vw #eaeefb, 346px 0 0 -3.75vw #eaeefb, 347px 0 0 -3.75vw #eaeefb, 348px 0 0 -3.75vw #eaeefb, 349px 0 0 -3.75vw #eaeefb, 350px 0 0 -3.75vw #eaeefb, 351px 0 0 -3.75vw #eaeefb, 352px 0 0 -3.75vw #eaeefb, 353px 0 0 -3.75vw #eaeefb, 354px 0 0 -3.75vw #eaeefb, 355px 0 0 -3.75vw #eaeefb, 356px 0 0 -3.75vw #eaeefb, 357px 0 0 -3.75vw #eaeefb, 358px 0 0 -3.75vw #eaeefb, 359px 0 0 -3.75vw #eaeefb, 360px 0 0 -3.75vw #eaeefb, 361px 0 0 -3.75vw #eaeefb, 362px 0 0 -3.75vw #eaeefb, 363px 0 0 -3.75vw #eaeefb, 364px 0 0 -3.75vw #eaeefb, 365px 0 0 -3.75vw #eaeefb, 366px 0 0 -3.75vw #eaeefb, 367px 0 0 -3.75vw #eaeefb, 368px 0 0 -3.75vw #eaeefb, 369px 0 0 -3.75vw #eaeefb, 370px 0 0 -3.75vw #eaeefb, 371px 0 0 -3.75vw #eaeefb, 372px 0 0 -3.75vw #eaeefb, 373px 0 0 -3.75vw #eaeefb, 374px 0 0 -3.75vw #eaeefb, 375px 0 0 -3.75vw #eaeefb, 376px 0 0 -3.75vw #eaeefb, 377px 0 0 -3.75vw #eaeefb, 378px 0 0 -3.75vw #eaeefb, 379px 0 0 -3.75vw #eaeefb, 380px 0 0 -3.75vw #eaeefb, 381px 0 0 -3.75vw #eaeefb, 382px 0 0 -3.75vw #eaeefb, 383px 0 0 -3.75vw #eaeefb, 384px 0 0 -3.75vw #eaeefb, 385px 0 0 -3.75vw #eaeefb, 386px 0 0 -3.75vw #eaeefb, 387px 0 0 -3.75vw #eaeefb, 388px 0 0 -3.75vw #eaeefb, 389px 0 0 -3.75vw #eaeefb, 390px 0 0 -3.75vw #eaeefb, 391px 0 0 -3.75vw #eaeefb, 392px 0 0 -3.75vw #eaeefb, 393px 0 0 -3.75vw #eaeefb, 394px 0 0 -3.75vw #eaeefb, 395px 0 0 -3.75vw #eaeefb, 396px 0 0 -3.75vw #eaeefb, 397px 0 0 -3.75vw #eaeefb, 398px 0 0 -3.75vw #eaeefb, 399px 0 0 -3.75vw #eaeefb, 400px 0 0 -3.75vw #eaeefb, 401px 0 0 -3.75vw #eaeefb, 402px 0 0 -3.75vw #eaeefb, 403px 0 0 -3.75vw #eaeefb, 404px 0 0 -3.75vw #eaeefb, 405px 0 0 -3.75vw #eaeefb, 406px 0 0 -3.75vw #eaeefb, 407px 0 0 -3.75vw #eaeefb, 408px 0 0 -3.75vw #eaeefb, 409px 0 0 -3.75vw #eaeefb, 410px 0 0 -3.75vw #eaeefb, 411px 0 0 -3.75vw #eaeefb, 412px 0 0 -3.75vw #eaeefb, 413px 0 0 -3.75vw #eaeefb, 414px 0 0 -3.75vw #eaeefb, 415px 0 0 -3.75vw #eaeefb, 416px 0 0 -3.75vw #eaeefb, 417px 0 0 -3.75vw #eaeefb, 418px 0 0 -3.75vw #eaeefb, 419px 0 0 -3.75vw #eaeefb, 420px 0 0 -3.75vw #eaeefb, 421px 0 0 -3.75vw #eaeefb, 422px 0 0 -3.75vw #eaeefb, 423px 0 0 -3.75vw #eaeefb, 424px 0 0 -3.75vw #eaeefb, 425px 0 0 -3.75vw #eaeefb, 426px 0 0 -3.75vw #eaeefb, 427px 0 0 -3.75vw #eaeefb, 428px 0 0 -3.75vw #eaeefb, 429px 0 0 -3.75vw #eaeefb, 430px 0 0 -3.75vw #eaeefb, 431px 0 0 -3.75vw #eaeefb, 432px 0 0 -3.75vw #eaeefb, 433px 0 0 -3.75vw #eaeefb, 434px 0 0 -3.75vw #eaeefb, 435px 0 0 -3.75vw #eaeefb, 436px 0 0 -3.75vw #eaeefb, 437px 0 0 -3.75vw #eaeefb, 438px 0 0 -3.75vw #eaeefb, 439px 0 0 -3.75vw #eaeefb, 440px 0 0 -3.75vw #eaeefb, 441px 0 0 -3.75vw #eaeefb, 442px 0 0 -3.75vw #eaeefb, 443px 0 0 -3.75vw #eaeefb, 444px 0 0 -3.75vw #eaeefb, 445px 0 0 -3.75vw #eaeefb, 446px 0 0 -3.75vw #eaeefb, 447px 0 0 -3.75vw #eaeefb, 448px 0 0 -3.75vw #eaeefb, 449px 0 0 -3.75vw #eaeefb, 450px 0 0 -3.75vw #eaeefb, 451px 0 0 -3.75vw #eaeefb, 452px 0 0 -3.75vw #eaeefb, 453px 0 0 -3.75vw #eaeefb, 454px 0 0 -3.75vw #eaeefb, 455px 0 0 -3.75vw #eaeefb, 456px 0 0 -3.75vw #eaeefb, 457px 0 0 -3.75vw #eaeefb, 458px 0 0 -3.75vw #eaeefb, 459px 0 0 -3.75vw #eaeefb, 460px 0 0 -3.75vw #eaeefb, 461px 0 0 -3.75vw #eaeefb, 462px 0 0 -3.75vw #eaeefb, 463px 0 0 -3.75vw #eaeefb, 464px 0 0 -3.75vw #eaeefb, 465px 0 0 -3.75vw #eaeefb, 466px 0 0 -3.75vw #eaeefb, 467px 0 0 -3.75vw #eaeefb, 468px 0 0 -3.75vw #eaeefb, 469px 0 0 -3.75vw #eaeefb, 470px 0 0 -3.75vw #eaeefb, 471px 0 0 -3.75vw #eaeefb, 472px 0 0 -3.75vw #eaeefb, 473px 0 0 -3.75vw #eaeefb, 474px 0 0 -3.75vw #eaeefb, 475px 0 0 -3.75vw #eaeefb, 476px 0 0 -3.75vw #eaeefb, 477px 0 0 -3.75vw #eaeefb, 478px 0 0 -3.75vw #eaeefb, 479px 0 0 -3.75vw #eaeefb, 480px 0 0 -3.75vw #eaeefb, 481px 0 0 -3.75vw #eaeefb, 482px 0 0 -3.75vw #eaeefb, 483px 0 0 -3.75vw #eaeefb, 484px 0 0 -3.75vw #eaeefb, 485px 0 0 -3.75vw #eaeefb, 486px 0 0 -3.75vw #eaeefb, 487px 0 0 -3.75vw #eaeefb, 488px 0 0 -3.75vw #eaeefb, 489px 0 0 -3.75vw #eaeefb, 490px 0 0 -3.75vw #eaeefb, 491px 0 0 -3.75vw #eaeefb, 492px 0 0 -3.75vw #eaeefb, 493px 0 0 -3.75vw #eaeefb, 494px 0 0 -3.75vw #eaeefb, 495px 0 0 -3.75vw #eaeefb, 496px 0 0 -3.75vw #eaeefb, 497px 0 0 -3.75vw #eaeefb, 498px 0 0 -3.75vw #eaeefb, 499px 0 0 -3.75vw #eaeefb, 500px 0 0 -3.75vw #eaeefb, 501px 0 0 -3.75vw #eaeefb, 502px 0 0 -3.75vw #eaeefb, 503px 0 0 -3.75vw #eaeefb, 504px 0 0 -3.75vw #eaeefb, 505px 0 0 -3.75vw #eaeefb, 506px 0 0 -3.75vw #eaeefb, 507px 0 0 -3.75vw #eaeefb, 508px 0 0 -3.75vw #eaeefb, 509px 0 0 -3.75vw #eaeefb, 510px 0 0 -3.75vw #eaeefb, 511px 0 0 -3.75vw #eaeefb, 512px 0 0 -3.75vw #eaeefb, 513px 0 0 -3.75vw #eaeefb, 514px 0 0 -3.75vw #eaeefb, 515px 0 0 -3.75vw #eaeefb, 516px 0 0 -3.75vw #eaeefb, 517px 0 0 -3.75vw #eaeefb, 518px 0 0 -3.75vw #eaeefb, 519px 0 0 -3.75vw #eaeefb, 520px 0 0 -3.75vw #eaeefb, 521px 0 0 -3.75vw #eaeefb, 522px 0 0 -3.75vw #eaeefb, 523px 0 0 -3.75vw #eaeefb, 524px 0 0 -3.75vw #eaeefb, 525px 0 0 -3.75vw #eaeefb, 526px 0 0 -3.75vw #eaeefb, 527px 0 0 -3.75vw #eaeefb, 528px 0 0 -3.75vw #eaeefb, 529px 0 0 -3.75vw #eaeefb, 530px 0 0 -3.75vw #eaeefb, 531px 0 0 -3.75vw #eaeefb, 532px 0 0 -3.75vw #eaeefb, 533px 0 0 -3.75vw #eaeefb, 534px 0 0 -3.75vw #eaeefb, 535px 0 0 -3.75vw #eaeefb, 536px 0 0 -3.75vw #eaeefb, 537px 0 0 -3.75vw #eaeefb, 538px 0 0 -3.75vw #eaeefb, 539px 0 0 -3.75vw #eaeefb, 540px 0 0 -3.75vw #eaeefb, 541px 0 0 -3.75vw #eaeefb, 542px 0 0 -3.75vw #eaeefb, 543px 0 0 -3.75vw #eaeefb, 544px 0 0 -3.75vw #eaeefb, 545px 0 0 -3.75vw #eaeefb, 546px 0 0 -3.75vw #eaeefb, 547px 0 0 -3.75vw #eaeefb, 548px 0 0 -3.75vw #eaeefb, 549px 0 0 -3.75vw #eaeefb, 550px 0 0 -3.75vw #eaeefb, 0 1vw 15px -3px #10d5c2;
+  }
+}
+.per {
+  margin-top: 1.15rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 24%;
+}
+.per .switch {
+  width: 2.7rem;
+  background-color: #cdd7ee;
+  height: 1.35rem;
+  border-radius: 9in;
+  margin: 0rem 0.95rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0.23rem;
+}
+.per .switch .switch_dot {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 9in;
+  background-color: white;
+}
+.per .switch:hover {
+  background-color: #10d5c2;
+}
+.per .year {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.per .year .year_discount {
+  font-size: 0.65rem;
+  margin-left: 0.65rem;
+  background-color: #feece7;
+  color: #ff8c66;
+  padding: 0.15rem 0.32rem;
+  border-radius: 9in;
+}
+
+@media only screen and (max-width: 800px) {
+  .per {
+    position: relative;
+    top: -5.5vw;
+    margin-top: 0rem;
+    padding-left: 9%;
+  }
+  .per p {
+    font-size: 3vw;
+  }
+  .per .switch {
+    width: 11.2vw;
+    height: 5.2vw;
+    margin: 0rem 3.6vw;
+    padding: 0 1.2vw;
+  }
+  .per .switch .switch_dot {
+    width: 3.8vw;
+    height: 3.8vw;
+  }
+  .per .year .year_discount {
+    position: absolute;
+    right: -2vw;
+    font-size: 2.5vw;
+    margin-left: 0rem;
+    padding: 0.4vw 2vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .per {
+    top: 0;
+    margin-top: -11vw;
+  }
+  .per p {
+    font-size: 3.2vw;
+  }
+  .per .switch {
+    margin: 0rem 3vw;
+  }
+  .per .year .year_discount {
+    font-size: 2.8vw;
+  }
+}
+.Start {
+  width: 100%;
+  padding: 1.8rem 2.9rem 1.65rem 2.9rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Start .check_list {
+  display: flex;
+  flex-direction: column;
+}
+.Start .check_list .check_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+.Start .check_list .check_item img {
+  width: 0.6rem;
+  height: 0.5rem;
+  margin-right: 1rem;
+}
+.Start button {
+  height: 2.6rem;
+  width: 10.5rem;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  border-radius: 9in;
+  background-color: #293356;
+  color: #bdccff;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.Start button:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .Start {
+    padding: 7vw 5.438vw 8.5vw 5.438vw;
+    flex-direction: column;
+    height: 53vw;
+  }
+  .Start .check_list {
+    align-items: center;
+  }
+  .Start .check_list .check_item {
+    margin-bottom: 3vw;
+  }
+  .Start .check_list .check_item p {
+    font-size: 3vw;
+    font-weight: 600;
+  }
+  .Start .check_list .check_item img {
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-right: 5vw;
+  }
+  .Start button {
+    height: 11vw;
+    width: 44vw;
+    font-size: 3.2vw;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .Start .check_list .check_item {
+    margin-bottom: 3.5vw;
+  }
+  .Start .check_list .check_item p {
+    font-size: 3.3vw;
+  }
+  .Start .check_list .check_item img {
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-right: 5vw;
+  }
+  .Start button {
+    height: 11vw;
+    width: 44vw;
+    font-size: 3.3vw;
+  }
+}

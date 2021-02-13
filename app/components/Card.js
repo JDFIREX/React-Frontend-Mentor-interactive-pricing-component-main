@@ -146,18 +146,20 @@ class Range extends React.Component{
     render() {
         return (
             <div className="range">
+            <label for="range_input">
                 <input 
-                    type="range" 
-                    id="range_input" 
-                    className="range_input" 
-                    name="range_input"
-                    min="1"
-                    max="5"
-                    value={this.state.value}
-                    onChange={this.RangeChange}
-                    defaultValue="3"
-                    step="1"
-                />
+                        type="range" 
+                        id="range_input" 
+                        className="range_input" 
+                        name="range_input"
+                        min="1"
+                        max="5"
+                        value={this.state.value}
+                        onChange={this.RangeChange}
+                        defaultValue="3"
+                        step="1"
+                    />
+            </label>
             </div>
         )
     }

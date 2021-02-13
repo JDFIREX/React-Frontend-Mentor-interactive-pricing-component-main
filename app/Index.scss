@@ -16,15 +16,6 @@ body{
     font-size: 15px;
 }
 
-.design{
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    opacity: .8;
-    z-index: 2000;
-    display: none;
-}
-
 .bg-pattern{
     position: absolute;
     top: 0; right: 0;
@@ -39,8 +30,17 @@ body{
     }
     .bg-pattern{
         height: 100vw;
-        width: 100%;
         background-color: #f1f5fe;
         border-radius: 0 0 0 4in;
+    }
+}
+@media only screen and (max-width: 600px){
+    .bg-pattern{
+        height: 150vw;
+    }
+}
+@media only screen and (max-width: 350px){
+    .bg-pattern{
+        height: 170vw;
     }
 }
